@@ -22,7 +22,11 @@
     "name": "Get Started",
     "url": "https://gridix.app"
   },
-  
+  "seo": {
+    "metatags": {
+      "canonical": "https://docs.gridix.live"
+    }
+  },
   "anchors": [
     {
       "name": "Telegram",
