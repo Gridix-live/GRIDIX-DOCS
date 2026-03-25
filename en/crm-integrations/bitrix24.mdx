@@ -1,0 +1,49 @@
+---
+title: "Bitrix24 Integration"
+description: "Connect Bitrix24 to Gridix for automatic lead submission and deal status synchronization"
+---
+
+Connect Gridix with Bitrix24 so that leads from your floor plan widgets are automatically created as deals in Bitrix24, with deal stages synchronized with your Gridix project.
+
+## Getting Started
+
+<Steps>
+  <Step title="Create a Bitrix24 account">
+    If you don't have a Bitrix24 account yet, create one at bitrix24.com.
+  </Step>
+  <Step title="Install the Gridix app in Bitrix24">
+    Open the Gridix application page in the Bitrix24 marketplace and install it.
+  </Step>
+  <Step title="Authorize and finish installation">
+    After installation, sign in using your Bitrix24 account details and complete the setup.
+  </Step>
+</Steps>
+
+## How It Works
+
+- Gridix stores a single Bitrix24 connection per Gridix account.
+- For each Gridix project, you select a Bitrix24 pipeline (deal category).
+- After selecting a pipeline, Gridix creates a local funnel with all statuses and sets up stage mapping for synchronization.
+
+<Note>
+  **Screenshot:** Bitrix24 integration settings — pipeline selection and stage mapping
+</Note>
+
+## Lead Flow
+
+When a visitor submits an inquiry on your embedded floor plan:
+
+1. A lead is created in Gridix with apartment and contact details
+2. The lead is automatically sent to Bitrix24 as a new deal
+3. The deal is placed in the configured pipeline
+4. Stage changes in either system are synchronized
+
+## Disconnecting
+
+To remove the Bitrix24 integration, go to your project settings and disconnect the pipeline. This stops new leads from being sent but does not affect existing deals in Bitrix24.
+
+## Next Steps
+
+- **[AmoCRM Integration](/en/crm-integrations/amocrm)** — alternative CRM option
+- **[Lead Management](/en/leads/overview)** — managing leads in Gridix
+- **[Project Settings](/en/projects/editing)** — where to find integration settings per project

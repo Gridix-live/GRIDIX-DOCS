@@ -1,0 +1,54 @@
+---
+title: "Contact Management"
+description: "Working with contact details, exports, and lead relationships"
+---
+
+Contacts aggregate data from leads and agent applications. This page covers how to work with contact information effectively.
+
+## Contact Details
+
+### Client Contacts
+
+Each client contact shows:
+
+- **Name, email, phone** — from the lead form submission
+- **Lead count** — number of leads from this person (deduplicated by email/phone)
+- **First created** — when the first lead was submitted
+
+### Agent Contacts
+
+Each agent contact shows:
+
+- **Name, email, phone** — from the agent application
+- **Agent status** — pending, approved, blocked, or needs correction
+- **Agent type** — agency or individual
+
+## Relationship to Leads
+
+Contacts and leads are connected but serve different purposes:
+
+| | Contacts | Leads |
+|---|---|---|
+| Purpose | Identify unique people | Track individual inquiries |
+| Creation | Automatic (from leads/agents) | Automatic (from widget forms) |
+| Deduplication | Yes (by email/phone) | No (each submission is separate) |
+| Editing | Read-only | Status, notes, CRM sync |
+
+A single contact may represent multiple leads. For example, if a person submits inquiries for 3 different apartments, you'll see 1 contact with lead count = 3.
+
+## Exporting Contacts
+
+To export your contacts:
+
+1. Navigate to the Contacts section
+2. Apply any filters (All / Clients / Agents) if needed
+3. Click the export button
+4. Download the CSV file
+
+The CSV includes: contact name, type, phone, email, details, and date.
+
+## Next Steps
+
+- **[Contacts Overview](/en/contacts/overview)** — filtering and searching contacts
+- **[Lead Management](/en/leads/management)** — managing individual lead records
+- **[Agent Network](/en/agent-network/overview)** — managing agent partners

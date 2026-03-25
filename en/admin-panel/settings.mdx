@@ -1,245 +1,88 @@
 ---
-title: "Settings Configuration"
-description: "Configure your company profile, account settings, and preferences in Gridix"
+title: "Settings"
+description: "Configure your company profile, account, notifications, and preferences in Gridix"
 ---
 
-# Settings Configuration
-
-The Settings page allows you to manage your company information, account details, and business preferences. This guide covers all available settings.
-
-## Accessing Settings
-
-Navigate to Settings from the admin dashboard sidebar. The Settings tab is available to developers and managers (with limited access).
+The Settings page lets you manage your company information, account security, notifications, and data. Access it from the sidebar in the admin dashboard.
 
 ## Company Profile
 
-### Basic Information
+### Company Information
 
-<Steps>
-  <Step title="Open Company Settings">
-    In the Settings tab, locate the "Company Information" section.
-  </Step>
-  
-  <Step title="Update Company Name">
-    Enter or update your company name. This will be displayed in:
-    - Project listings
-    - Invoices
-    - Partner program
-    - Email communications
-  </Step>
-  
-  <Step title="Save Changes">
-    Click "Save" to update your company information. Changes are applied immediately.
-  </Step>
-</Steps>
+Configure your company details used in invoices, partner program, and communications:
 
-### Detailed Company Information
+- **Company name**
+- **Email address**
+- **Phone number**
+- **Physical address**
+- **Tax ID / VAT number**
+- **Bank details** (bank name, IBAN)
+- **Billing currency**
+- **VAT payer status**
 
-For complete company profile, you can configure:
+<Note>
+  **Screenshot:** Company settings form — all fields visible
+</Note>
 
-<CardGroup cols={2}>
-  <Card title="Contact Information">
-    - Company name
-    - Email address
-    - Phone number
-    - Physical address
-  </Card>
-  <Card title="Business Details">
-    - Tax ID/VAT number
-    - Bank information
-    - IBAN (for invoicing)
-    - Currency preference
-    - VAT payer status
-  </Card>
-</CardGroup>
+### Currency Settings
 
-## Account Settings
+Set your default currency for project pricing, invoices, and partner payouts. Supported currencies include USD, EUR, GEL, and others.
 
-### User Profile
+## Account Security
 
-Manage your personal account information:
+Manage your personal account:
 
-- **Email Address**: Your login email (cannot be changed)
-- **Password**: Update your password for security
-- **Language Preference**: Set your default interface language
-- **Notification Settings**: Configure email notifications
-
-### Security
+- **Password** — update your login password
+- **Language preference** — set default interface language
+- **Session management** — active sessions and logout
 
 <Tip>
-Keep your account secure:
-- Use a strong, unique password
-- Enable two-factor authentication if available
-- Don't share your login credentials
-- Log out when using shared devices
+Use a strong, unique password and don't share login credentials. Log out when using shared devices.
 </Tip>
 
-## Subscription Management
+## Notifications
 
-View and manage your subscription from the Settings tab:
+Configure how you receive alerts about new leads, tasks, and system updates.
 
-- **Current Plan**: See your active subscription details
-- **Plan Features**: View included features for your plan
-- **Billing History**: Access invoices and payment records
-- **Upgrade/Downgrade**: Change your plan as needed
+**Channels:**
+- Email notifications
+- Push notifications (browser)
+- Telegram notifications (requires username verification)
 
-<Info>
-Subscription management is available in a dedicated Subscription tab. See [Subscription Management](/subscriptions/managing) for details.
-</Info>
+**Events:**
+- New lead created
+- Task due reminder
+- Payment received
+- System updates
+
+See [Notifications](/en/notifications/overview) for detailed configuration.
 
 ## Manager Accounts
 
-### Adding Managers
+Add and manage team members from the Manager Accounts section within Settings. See [Managing Team Members](/en/admin-panel/managers) for details.
 
-<Steps>
-  <Step title="Navigate to Manager Accounts">
-    In Settings, go to the "Manager Accounts" section.
-  </Step>
-  
-  <Step title="Add New Manager">
-    Click "Add Manager" and enter:
-    - Manager email address
-    - Manager name
-    - Assign to workspace (optional)
-  </Step>
-  
-  <Step title="Configure Access">
-    Set project access permissions:
-    - All projects
-    - Specific projects
-    - Project groups
-  </Step>
-  
-  <Step title="Send Invitation">
-    Click "Invite" to send an invitation email to the manager.
-  </Step>
-</Steps>
-
-### Managing Existing Managers
-
-For existing managers, you can:
-- Edit access permissions
-- Reassign to different workspaces
-- Remove manager access
-- View manager activity
-
-<Warning>
-Removing a manager will revoke all their access immediately. They will lose access to all assigned projects and leads.
-</Warning>
-
-## Theme and Branding
-
-Customize the appearance of your admin panel:
-
-### Color Scheme
-
-- **Primary Color**: Main brand color
-- **Background**: Panel background color
-- **Accent Colors**: Secondary colors for highlights
-
-### Logo Settings
-
-- Upload company logo
-- Set logo for light/dark themes
-- Configure logo size and position
-
-<Note>
-Branding customization is available for developers only. Managers cannot modify branding settings.
-</Note>
-
-## Currency Settings
-
-Set your default currency for:
-- Project pricing
-- Subscription billing
-- Invoice generation
-- Partner payouts
-
-Supported currencies include:
-- USD (US Dollar)
-- EUR (Euro)
-- GEL (Georgian Lari)
-- RUB (Russian Ruble)
-- And more
-
-## Notification Preferences
-
-Configure how you receive notifications:
-
-- **Email Notifications**: Receive updates via email
-- **Lead Alerts**: Get notified of new leads
-- **Project Updates**: Notification when projects are modified
-- **Subscription Reminders**: Payment and renewal reminders
-
-## Data Export
+## Data & Export
 
 Export your data for backup or analysis:
 
-- **Projects**: Export project data as JSON or CSV
-- **Leads**: Export lead information with filters
-- **Invoices**: Download invoice PDFs
-- **Statistics**: Export analytics data
+- **Projects** — export as JSON or CSV
+- **Leads** — export with filters applied
+- **Invoices** — download as PDF
+- **Contracts** — manage digital signatures and agreements
 
-## Privacy and Security
-
-### Data Privacy
-
-Gridix respects your data privacy:
-- All data is encrypted in transit
-- Secure storage with regular backups
-- GDPR compliance
-- Data retention policies
-
-### Account Security
-
-<Check>
-Security features:
-- Encrypted password storage
-- Secure authentication
-- Session management
-- Activity logging
-</Check>
-
-## Troubleshooting Settings
+## Troubleshooting
 
 <AccordionGroup>
   <Accordion title="Changes not saving">
-    - Ensure you clicked "Save" button
-    - Check for validation errors (red highlights)
-    - Refresh the page and try again
-    - Clear browser cache if issues persist
+    Ensure you clicked "Save". Check for validation errors (red highlights). Refresh the page and try again.
   </Accordion>
-  
   <Accordion title="Can't access certain settings">
-    - Verify your user role (developer vs manager)
-    - Check workspace permissions
-    - Contact support if you believe you should have access
-  </Accordion>
-  
-  <Accordion title="Manager invitation not received">
-    - Check spam/junk folder
-    - Verify email address is correct
-    - Resend invitation from manager accounts section
-    - Contact support if issue continues
+    Verify your role — managers have limited settings access. Only developers can modify company settings, subscriptions, and team members.
   </Accordion>
 </AccordionGroup>
 
-## Best Practices
-
-<Tip>
-**Keep information updated**: Regularly review and update your company information to ensure accuracy in invoices and communications.
-</Tip>
-
-<Tip>
-**Manage team access**: Regularly review manager accounts and remove access for team members who no longer need it.
-</Tip>
-
-<Tip>
-**Backup important data**: Use export features to keep backups of critical project and lead data.
-</Tip>
-
 ## Next Steps
 
-- **[Manager Accounts](/admin-panel/managers)** - Detailed guide on managing team members
-- **[Branding Setup](/admin-panel/branding)** - Customize your brand appearance
-- **[Subscription Management](/subscriptions/managing)** - Manage your subscription plan
+- **[Manager Accounts](/en/admin-panel/managers)** — manage team members
+- **[Branding](/en/admin-panel/branding)** — customize brand appearance
+- **[Notifications](/en/notifications/overview)** — configure notification preferences

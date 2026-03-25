@@ -1,0 +1,14 @@
+{
+  "name": "gridix-docs",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "translate": "node translate-docs.mjs",
+    "translate:force": "node translate-docs.mjs --force"
+  },
+  "dependencies": {
+    "fs-extra": "^11.2.0",
+    "google-translate-api-x": "^10.7.2"
+  }
+}

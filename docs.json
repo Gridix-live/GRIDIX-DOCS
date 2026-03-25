@@ -40,145 +40,126 @@
         "language": "en",
         "name": "English",
         "default": true,
-        "groups": [
+        "tabs": [
           {
-            "group": "Getting Started",
-            "pages": [
-              "en/intro",
-              "en/getting-started/registration",
-              "en/getting-started/first-project",
-              "en/getting-started/dashboard-overview"
+            "tab": "For Developers",
+            "icon": "building",
+            "groups": [
+              {
+                "group": "Getting Started",
+                "pages": [
+                  "en/intro",
+                  "en/getting-started/registration",
+                  "en/getting-started/first-project",
+                  "en/getting-started/dashboard-overview"
+                ]
+              },
+              {
+                "group": "Admin Panel",
+                "pages": [
+                  "en/admin-panel/overview",
+                  "en/admin-panel/settings",
+                  "en/admin-panel/managers",
+                  "en/admin-panel/branding"
+                ]
+              },
+              {
+                "group": "Projects",
+                "pages": [
+                  "en/projects/creation",
+                  "en/projects/editing",
+                  "en/projects/apartments",
+                  "en/projects/custom-fields",
+                  "en/projects/visualization",
+                  "en/projects/pricing"
+                ]
+              },
+              {
+                "group": "Contacts",
+                "pages": [
+                  "en/contacts/overview",
+                  "en/contacts/management"
+                ]
+              },
+              {
+                "group": "Leads",
+                "pages": [
+                  "en/leads/overview",
+                  "en/leads/management"
+                ]
+              },
+              {
+                "group": "Agent Network",
+                "pages": [
+                  "en/agent-network/overview",
+                  "en/agent-network/agencies",
+                  "en/agent-network/leads",
+                  "en/agent-network/finance"
+                ]
+              },
+              {
+                "group": "CRM Integrations",
+                "pages": [
+                  "en/crm-integrations/amocrm",
+                  "en/crm-integrations/bitrix24"
+                ]
+              },
+              {
+                "group": "Widgets",
+                "pages": [
+                  "en/widgets/embedding"
+                ]
+              },
+              {
+                "group": "Custom Domains",
+                "pages": [
+                  "en/domains/setup"
+                ]
+              },
+              {
+                "group": "Analytics",
+                "pages": [
+                  "en/analytics/overview"
+                ]
+              },
+              {
+                "group": "Notifications",
+                "pages": [
+                  "en/notifications/overview"
+                ]
+              },
+              {
+                "group": "Subscriptions",
+                "pages": [
+                  "en/subscriptions/plans",
+                  "en/subscriptions/managing"
+                ]
+              }
             ]
           },
           {
-            "group": "Admin Panel",
-            "pages": [
-              "en/admin-panel/overview",
-              "en/admin-panel/settings",
-              "en/admin-panel/managers",
-              "en/admin-panel/branding"
+            "tab": "For Agents",
+            "icon": "user-tie",
+            "groups": [
+              {
+                "group": "Agent Cabinet",
+                "pages": [
+                  "en/agent-cabinet/overview"
+                ]
+              }
             ]
           },
           {
-            "group": "Projects",
-            "pages": [
-              "en/projects/creation",
-              "en/projects/editing",
-              "en/projects/apartments",
-              "en/projects/visualization",
-              "en/projects/pricing"
-            ]
-          },
-          {
-            "group": "Leads",
-            "pages": [
-              "en/leads/overview",
-              "en/leads/management"
-            ]
-          },
-          {
-            "group": "CRM Integrations",
-            "pages": [
-              "en/crm-integrations/amocrm"
-            ]
-          },
-          {
-            "group": "Widgets",
-            "pages": [
-              "en/widgets/embedding"
-            ]
-          },
-          {
-            "group": "Custom Domains",
-            "pages": [
-              "en/domains/setup"
-            ]
-          },
-          {
-            "group": "Subscriptions",
-            "pages": [
-              "en/subscriptions/plans",
-              "en/subscriptions/managing"
-            ]
-          },
-          {
-            "group": "Partner Program",
-            "pages": [
-              "en/partners/overview",
-              "en/partners/types"
-            ]
-          }
-        ]
-      },
-      {
-        "language": "ru",
-        "name": "Русский",
-        "groups": [
-          {
-            "group": "Начало работы",
-            "pages": [
-              "ru/intro",
-              "ru/getting-started/registration",
-              "ru/getting-started/first-project",
-              "ru/getting-started/dashboard-overview"
-            ]
-          },
-          {
-            "group": "Админ-панель",
-            "pages": [
-              "ru/admin-panel/overview",
-              "ru/admin-panel/settings",
-              "ru/admin-panel/managers",
-              "ru/admin-panel/branding"
-            ]
-          },
-          {
-            "group": "Проекты",
-            "pages": [
-              "ru/projects/creation",
-              "ru/projects/editing",
-              "ru/projects/apartments",
-              "ru/projects/visualization",
-              "ru/projects/pricing"
-            ]
-          },
-          {
-            "group": "Лиды",
-            "pages": [
-              "ru/leads/overview",
-              "ru/leads/management"
-            ]
-          },
-          {
-            "group": "CRM интеграции",
-            "pages": [
-              "ru/crm-integrations/amocrm"
-            ]
-          },
-          {
-            "group": "Виджеты",
-            "pages": [
-              "ru/widgets/embedding"
-            ]
-          },
-          {
-            "group": "Пользовательские домены",
-            "pages": [
-              "ru/domains/setup"
-            ]
-          },
-          {
-            "group": "Подписки",
-            "pages": [
-              "ru/subscriptions/plans",
-              "ru/subscriptions/managing"
-            ]
-          },
-          {
-            "group": "Партнёрская программа",
-            "pages": [
-              "ru/partners/overview",
-              "ru/partners/types"
+            "tab": "For Partners",
+            "icon": "handshake",
+            "groups": [
+              {
+                "group": "Partner Program",
+                "pages": [
+                  "en/partners/overview",
+                  "en/partners/types"
+                ]
+              }
             ]
           }
         ]
