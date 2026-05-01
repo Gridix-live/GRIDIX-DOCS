@@ -167,7 +167,10 @@
         "language": "ru",
         "tabs": [
           {
-            "tab": "Начало работы"
+            "tab": "Начало работы",
+            "pages": [
+              "test-stranitsy"
+            ]
           }
         ]
       }
