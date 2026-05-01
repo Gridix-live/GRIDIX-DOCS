@@ -1,63 +1,80 @@
 ---
 title: "Widget Embedding"
-description: "Generate and embed Gridix floor plan widgets on your website"
+description: "Generate and embed interactive Gridix widgets on your website"
 ---
 
-Embed interactive Gridix floor plans on your website with a single line of code. This guide covers widget generation, configuration, and embedding.
+<Frame>
+  ![Gridix widget on a website](/images/Gridix---widget.png)
+</Frame>
 
-## Overview
+Gridix widgets let you embed interactive floor plans, apartment availability, and lead forms into a developer or agency website. Visitors stay on your website, explore available units visually, and submit an inquiry without opening a separate Gridix workspace.
 
-Gridix widgets are embeddable interactive floor plans that you can add to any website. They include:
+The usual setup is simple: choose a project in Gridix, generate the embed code, paste it into your website, and test the experience on desktop and mobile.
 
-- **Interactive Floor Plans**: Clickable apartment layouts
-- **Lead Collection**: Built-in inquiry forms
-- **Multi-language Support**: Display in multiple languages
-- **Responsive Design**: Works on all devices
-- **Customizable**: Match your brand colors
+<Note>
+  **Video:** example Gridix project workflow. If you have a dedicated widget generation video, use it here.
+</Note>
 
-## Generating Widget Code
+<iframe src="https://www.youtube.com/embed/nIbp3pd9Mio" title="Example Gridix project workflow" frameborder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen />
 
-### Step 1: Access Widget Generator
+## What the widget does
+
+The widget brings the main Gridix buyer experience into your website:
+
+- **Interactive floor plans**: visitors can select apartments directly on the visual plan.
+- **Lead collection**: inquiry forms are part of the browsing flow.
+- **Multi-language interface**: English, Russian, Georgian, and Arabic are supported.
+- **Responsive layout**: the widget works across desktop and mobile screens.
+- **Brand fit**: the surrounding page and container can match your website design.
+
+## Before you start
+
+Before embedding the widget, make sure that:
+
+- the project is published and has up-to-date floor plans;
+- apartments, prices, and availability statuses are configured;
+- lead forms are enabled and route leads to the correct Gridix workspace;
+- you have access to the website HTML, CMS custom-code block, or website developer.
+
+## Get the embed code
+
+### Step 1. Open the widget generator
 
 <Steps>
-  <Step title="Navigate to Widgets">
-    Go to "Widgets" tab in the admin dashboard.
+  <Step title="Go to widgets">
+    Open the widgets section in the Gridix admin dashboard.
   </Step>
-  
-  <Step title="Select Project">
-    Choose which project to embed:
-    - Single project: Select specific project
-    - All projects: Show all your projects
+  <Step title="Select a project">
+    Choose what the website should display:
+
+    - one specific project;
+    - all developer projects.
   </Step>
-  
-  <Step title="Configure Language">
-    Set default language for the widget:
-    - English (en)
-    - Russian (ru)
-    - Georgian (ka)
-    - Arabic (ar)
+  <Step title="Choose the default language">
+    Set the default interface language:
+
+    - English (`en`);
+    - Russian (`ru`);
+    - Georgian (`ka`);
+    - Arabic (`ar`).
   </Step>
 </Steps>
 
-### Step 2: Generate Code
+### Step 2. Copy the code
 
 <Steps>
-  <Step title="Review Configuration">
-    Verify project and language settings.
+  <Step title="Review the settings">
+    Confirm that the selected project and language are correct.
   </Step>
-  
-  <Step title="Copy Code">
-    Click "Copy Code" to copy the embed code to clipboard.
+  <Step title="Copy the embed code">
+    Use the copy-code button to get the ready-to-use embed snippet.
   </Step>
-  
-  <Step title="Code Ready">
-    The code is ready to paste into your website.
+  <Step title="Paste it into your website">
+    Add the code to an HTML page, CMS block, or website template.
   </Step>
 </Steps>
 
-## Widget Code Structure
-
-### Basic Embed Code
+## Basic embed code
 
 ```html
 <div id="gridix-widget-root"></div>
@@ -72,269 +89,147 @@ Gridix widgets are embeddable interactive floor plans that you can add to any we
 </script>
 ```
 
-### Code Components
+The snippet has three parts:
 
-- **Container Div**: `<div id="gridix-widget-root"></div>` - Where widget appears
-- **Script Source**: Loads Gridix widget library
-- **Initialization**: Configures widget with your settings
+- **Container**: `<div id="gridix-widget-root"></div>` defines where the widget appears.
+- **Script**: loads the Gridix widget library.
+- **Initialization**: passes the project and language settings.
 
-## Embedding on Your Website
+<Tip>
+  In production, replace `your-domain.com`, `your-project-id`, or `your-user-id` with the values from your Gridix workspace.
+</Tip>
 
-### HTML Websites
+## Embed on your website
+
+### Standard HTML website
 
 <Steps>
-  <Step title="Open HTML File">
-    Open your website's HTML file in a text editor.
+  <Step title="Open the HTML file">
+    Find the page or template where the widget should appear.
   </Step>
-  
-  <Step title="Find Insertion Point">
-    Locate where you want the widget to appear.
+  <Step title="Choose the placement">
+    Paste the snippet where visitors should see the floor plans.
   </Step>
-  
-  <Step title="Paste Code">
-    Paste the widget code at the desired location.
-  </Step>
-  
-  <Step title="Save and Publish">
-    Save the file and publish to your web server.
+  <Step title="Publish the page">
+    Save the file and deploy the updated page to your web server.
   </Step>
 </Steps>
 
 ### WordPress
 
 <Steps>
-  <Step title="Edit Page/Post">
-    Edit the page or post where you want the widget.
+  <Step title="Open the page">
+    Edit the page or post where the widget should appear.
   </Step>
-  
-  <Step title="Add HTML Block">
-    Add an "HTML" or "Custom HTML" block.
+  <Step title="Add a custom HTML block">
+    Use a Custom HTML block or another block that allows scripts.
   </Step>
-  
-  <Step title="Paste Code">
-    Paste the widget code into the HTML block.
-  </Step>
-  
-  <Step title="Publish">
-    Publish or update the page.
+  <Step title="Paste the embed code">
+    Add the Gridix snippet and update the page.
   </Step>
 </Steps>
 
-### CMS Platforms
+### Other CMS platforms
 
-For other CMS platforms (Drupal, Joomla, etc.):
+For Drupal, Joomla, and other CMS platforms, use the same logic: find a custom HTML/code insertion option, paste the embed code, and save the changes.
 
-- Find HTML/code insertion option
-- Paste widget code
-- Save changes
+<Warning>
+  Do not reuse the same `gridix-widget-root` container multiple times on one page. If you need several widgets, give each one a different `containerId`.
+</Warning>
 
-## Widget Configuration Options
+## Core settings
 
-### Project Selection
-
-```javascript
-// Single project
-projectId: "your-project-id"
-
-// All projects (for developers)
-userId: "your-user-id"
-```
-
-### Language Configuration
+### One project
 
 ```javascript
-lang: "en"  // English
-lang: "ru"  // Russian
-lang: "ka"  // Georgian
-lang: "ar"  // Arabic
+window.GridixWidget.init({
+  lang: "en",
+  projectId: "your-project-id"
+});
 ```
 
-### Additional Options
+### All developer projects
+
+```javascript
+window.GridixWidget.init({
+  lang: "en",
+  userId: "your-user-id"
+});
+```
+
+### Additional options
 
 ```javascript
 window.GridixWidget.init({
   lang: "en",
   projectId: "project-id",
-  theme: "light",        // Light or dark theme
-  showControls: true,    // Show zoom/pan controls
-  enableSearch: true     // Enable apartment search
+  theme: "light",
+  showControls: true,
+  enableSearch: true
 });
 ```
 
-## Widget Preview
+### Container size
 
-### Testing Before Embedding
+Give the container a stable width and minimum height so the page does not jump while the widget loads:
+
+```html
+<div id="gridix-widget-root" style="width: 100%; min-height: 640px;"></div>
+```
+
+## Test before publishing
 
 <Steps>
-  <Step title="Generate Code">
-    Create widget code in the admin dashboard.
+  <Step title="Open preview">
+    Use Gridix preview or a temporary page on your website.
   </Step>
-  
-  <Step title="Click Preview">
-    Click "Preview" button to see how widget looks.
+  <Step title="Check the main flow">
+    Confirm that floor plans open, lead forms work, and the selected language is correct.
   </Step>
-  
-  <Step title="Review Widget">
-    Check:
-    - Floor plan display
-    - Interactive features
-    - Language settings
-    - Mobile responsiveness
+  <Step title="Check mobile">
+    Open the page on a phone or use responsive preview in your browser.
   </Step>
-  
-  <Step title="Make Adjustments">
-    Return to settings to adjust if needed.
+  <Step title="Submit a test lead">
+    Make sure the lead appears in Gridix and contains the correct source.
   </Step>
 </Steps>
 
-### Preview Features
-
-- **Full Widget Display**: See exact widget appearance
-- **Interactive Testing**: Test all widget features
-- **Mobile Preview**: Check mobile responsiveness
-- **Language Switching**: Test language display
-
-## Multi-Language Widgets
-
-### Language Support
-
-Widgets support multiple languages:
-
-- **English (en)**: Default language
-- **Russian (ru)**: Russian interface
-- **Georgian (ka)**: Georgian interface
-- **Arabic (ar)**: Arabic interface (RTL support)
-
-### Language Switching
-
-Configure language in widget code:
-
-```javascript
-lang: "en"  // Set default language
-```
-
-Customers can switch languages if you enable language toggle in widget settings.
-
-## Widget Customization
-
-### Styling Options
-
-While embedded, widgets can be customized with CSS:
-
-```css
-#gridix-widget-root {
-  width: 100%;
-  height: 600px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-}
-```
-
-### Container Sizing
-
-Set widget dimensions:
-
-```html
-<div id="gridix-widget-root" style="width: 100%; height: 600px;"></div>
-```
-
 ## Troubleshooting
 
-### Common Issues
-
 <AccordionGroup>
-  <Accordion title="Widget not displaying">
-    - Verify script URL is correct
-    - Check browser console for errors
-    - Ensure container div exists
-    - Verify project ID is correct
+  <Accordion title="Widget is not displayed">
+    Check the script URL, the `gridix-widget-root` container, the `projectId`, and browser console errors. A common cause is a CMS block that removes `<script>` tags.
   </Accordion>
-  
-  <Accordion title="Widget appears blank">
-    - Check project is published
-    - Verify project has floor plans
-    - Check internet connection
-    - Clear browser cache
+
+  <Accordion title="Widget is blank">
+    Make sure the project is published and contains floor plans, apartments, and display-ready data.
   </Accordion>
-  
-  <Accordion title="Leads not collecting">
-    - Verify lead forms are enabled
-    - Check widget configuration
-    - Review project settings
-    - Test form submission
+
+  <Accordion title="Leads are not collected">
+    Check that lead forms are enabled, the project settings are correct, and a test form submission reaches Gridix.
+  </Accordion>
+
+  <Accordion title="Widget is too short or clipped">
+    Set a minimum container height, for example `min-height: 640px`, and check the styles of the parent block on your website.
   </Accordion>
 </AccordionGroup>
 
-## Best Practices
+## Best practices
 
 <Tip>
-**Test Before Publishing**: Always preview widget before embedding on live site.
+  Always preview the widget before publishing it on a live website.
 </Tip>
 
 <Tip>
-**Responsive Design**: Ensure widget container adapts to different screen sizes.
+  Use `lang: "en"` for English pages so the widget opens in English by default.
 </Tip>
 
 <Tip>
-**Loading Performance**: Widget loads asynchronously and won't block page rendering.
+  After publishing, test the page in a regular browser, not only in CMS preview mode.
 </Tip>
 
-<Tip>
-**Security**: Widget code is secure and doesn't require additional security measures.
-</Tip>
+## Next steps
 
-## Advanced Usage
-
-### Multiple Widgets
-
-Embed multiple widgets on the same page:
-
-```html
-<!-- First project -->
-<div id="gridix-widget-root-1"></div>
-<script>
-  window.GridixWidget && window.GridixWidget.init({
-    containerId: "gridix-widget-root-1",
-    projectId: "project-1-id",
-    lang: "en"
-  });
-</script>
-
-<!-- Second project -->
-<div id="gridix-widget-root-2"></div>
-<script>
-  window.GridixWidget && window.GridixWidget.init({
-    containerId: "gridix-widget-root-2",
-    projectId: "project-2-id",
-    lang: "en"
-  });
-</script>
-```
-
-### Dynamic Loading
-
-Load widget dynamically with JavaScript:
-
-```javascript
-function loadGridixWidget(projectId, containerId) {
-  const container = document.getElementById(containerId);
-  if (!container) return;
-  
-  const script = document.createElement('script');
-  script.src = 'https://your-domain.com/widget.js';
-  script.onload = function() {
-    window.GridixWidget.init({
-      containerId: containerId,
-      projectId: projectId,
-      lang: "en"
-    });
-  };
-  document.head.appendChild(script);
-}
-```
-
-## Next Steps
-
-- **[Project Management]( /en/projects/creation)** - Create and configure projects for widgets
-- **[Lead Management]( /en/leads/overview)** - Track leads from embedded widgets
-- **[Custom Domains]( /en/domains/setup)** - Use custom domains for widgets
+- [Project Management](/en/projects/creation) - Prepare projects and floor plans for the widget.
+- [Lead Management](/en/leads/overview) - Track leads collected through the embedded widget.
+- [Custom Domains](/en/domains/setup) - Connect branded domains for Gridix projects.
