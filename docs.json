@@ -167,13 +167,97 @@
         "language": "ru",
         "tabs": [
           {
-            "tab": "Начало работы",
-            "pages": [
+            "tab": "Для застройщиков",
+            "icon": "building",
+            "groups": [
               {
-                "group": "Виджеты",
-                "icon": "code",
+                "group": "Начало работы",
                 "pages": [
-                  "ru/widgets/embedding"
+                  "ru/intro",
+                  "ru/getting-started/registration",
+                  "ru/getting-started/first-project",
+                  "ru/getting-started/dashboard-overview"
+                ]
+              },
+              {
+                "group": "Админ-панель",
+                "pages": [
+                  "ru/admin-panel/overview",
+                  "ru/admin-panel/settings",
+                  "ru/admin-panel/managers",
+                  "ru/admin-panel/branding"
+                ]
+              },
+              {
+                "group": "Проекты и квартиры",
+                "pages": [
+                  "ru/projects/creation",
+                  "ru/projects/editing",
+                  "ru/projects/apartments",
+                  "ru/projects/custom-fields",
+                  "ru/projects/visualization",
+                  "ru/projects/pricing"
+                ]
+              },
+              {
+                "group": "Лиды и контакты",
+                "pages": [
+                  "ru/leads/overview",
+                  "ru/leads/management",
+                  "ru/contacts/overview",
+                  "ru/contacts/management"
+                ]
+              },
+              {
+                "group": "Сайт и интеграции",
+                "pages": [
+                  "ru/widgets/embedding",
+                  "ru/domains/setup",
+                  "ru/crm-integrations/amocrm",
+                  "ru/crm-integrations/bitrix24"
+                ]
+              },
+              {
+                "group": "Агентская сеть",
+                "pages": [
+                  "ru/broker-network/overview",
+                  "ru/broker-network/agencies",
+                  "ru/broker-network/leads",
+                  "ru/broker-network/finance"
+                ]
+              },
+              {
+                "group": "Операции",
+                "pages": [
+                  "ru/analytics/overview",
+                  "ru/notifications/overview",
+                  "ru/subscriptions/plans",
+                  "ru/subscriptions/managing"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Для брокеров",
+            "icon": "user-tie",
+            "groups": [
+              {
+                "group": "Кабинет брокера",
+                "pages": [
+                  "ru/broker-cabinet/overview"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Партнеры Gridix",
+            "icon": "handshake",
+            "groups": [
+              {
+                "group": "Партнерская программа",
+                "pages": [
+                  "ru/partners/overview",
+                  "ru/partners/types"
                 ]
               }
             ]
