@@ -15,7 +15,23 @@ The usual setup is simple: choose a project in Gridix, generate the embed code, 
   **Video:** example Gridix project workflow. If you have a dedicated widget generation video, use it here.
 </Note>
 
-<iframe src="https://www.youtube.com/embed/nIbp3pd9Mio" title="Example Gridix project workflow" frameborder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen />
+<iframe src="https://www.youtube.com/embed/nIbp3pd9Mio" title="Example Gridix project workflow" frameborder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
+
+## Simplest path
+
+If you are setting up the widget without a developer, follow this short flow first.
+
+<Steps>
+  <Step title="Generate the code in Gridix">
+    Open the widgets section, choose the project, and select the interface language.
+  </Step>
+  <Step title="Paste the code into your website">
+    Use an HTML block in your CMS or send the code to the person who manages your website.
+  </Step>
+  <Step title="Test a lead">
+    Open the published page as a regular visitor and submit a test inquiry.
+  </Step>
+</Steps>
 
 ## What the widget does
 
@@ -95,71 +111,104 @@ The snippet has three parts:
 - **Script**: loads the Gridix widget library.
 - **Initialization**: passes the project and language settings.
 
+## Where to find `projectId` and `userId`
+
+- `projectId` is used when the page should display one specific project.
+- `userId` is used when the page should display all projects for a developer or agency.
+- These values come from your Gridix workspace or from the ready embed code generated in the widgets section.
+
 <Tip>
   In production, replace `your-domain.com`, `your-project-id`, or `your-user-id` with the values from your Gridix workspace.
 </Tip>
 
 ## Embed on your website
 
-### Standard HTML website
+<Tabs>
+  <Tab title="Do it yourself" icon="user">
+    <Badge color="green" size="sm">Simple</Badge>
 
-<Steps>
-  <Step title="Open the HTML file">
-    Find the page or template where the widget should appear.
-  </Step>
-  <Step title="Choose the placement">
-    Paste the snippet where visitors should see the floor plans.
-  </Step>
-  <Step title="Publish the page">
-    Save the file and deploy the updated page to your web server.
-  </Step>
-</Steps>
+    Use this path if your CMS has a block for custom HTML or embed code.
 
-### WordPress
+    <Steps>
+      <Step title="Open the page in your CMS">
+        Go to the project page, landing page, or floor-plan section where the widget should appear.
+      </Step>
+      <Step title="Add an HTML block">
+        Look for a block named "HTML", "Custom HTML", "Embed", "Code", or something similar.
+      </Step>
+      <Step title="Paste the embed code">
+        Paste the code from Gridix, save the page, and open preview.
+      </Step>
+    </Steps>
+  </Tab>
+  <Tab title="HTML" icon="code">
+    <Badge color="blue" size="sm">For developers</Badge>
 
-<Steps>
-  <Step title="Open the page">
-    Edit the page or post where the widget should appear.
-  </Step>
-  <Step title="Add a custom HTML block">
-    Use a Custom HTML block or another block that allows scripts.
-  </Step>
-  <Step title="Paste the embed code">
-    Add the Gridix snippet and update the page.
-  </Step>
-</Steps>
+    <Steps>
+      <Step title="Open the HTML file">
+        Find the page or template where the widget should appear.
+      </Step>
+      <Step title="Choose the placement">
+        Paste the snippet where visitors should see the floor plans.
+      </Step>
+      <Step title="Publish the page">
+        Save the file and deploy the updated page to your web server.
+      </Step>
+    </Steps>
+  </Tab>
+  <Tab title="WordPress" icon="wordpress">
+    <Badge color="green" size="sm">CMS</Badge>
 
-### Other CMS platforms
+    <Steps>
+      <Step title="Open the page">
+        Edit the page or post where the widget should appear.
+      </Step>
+      <Step title="Add a custom HTML block">
+        Use a Custom HTML block or another block that allows scripts.
+      </Step>
+      <Step title="Paste the embed code">
+        Add the Gridix snippet and update the page.
+      </Step>
+    </Steps>
+  </Tab>
+  <Tab title="CMS / no-code" icon="layout-template">
+    <Badge color="green" size="sm">CMS</Badge>
 
-For Drupal, Joomla, and other CMS platforms, use the same logic: find a custom HTML/code insertion option, paste the embed code, and save the changes.
+    For Drupal, Joomla, Webflow, Tilda, and other CMS platforms, use the same logic: find a custom HTML/code insertion option, paste the Gridix embed code, and save the page.
+
+    If the platform removes `<script>` tags, send the code to your website developer or use the template-level custom code section.
+  </Tab>
+</Tabs>
+
+<Warning>
+  Some CMS platforms remove `<script>` tags from regular text blocks. If the widget does not appear after publishing, use an HTML/Embed block or send the code to your website developer.
+</Warning>
 
 <Warning>
   Do not reuse the same `gridix-widget-root` container multiple times on one page. If you need several widgets, give each one a different `containerId`.
 </Warning>
 
-## Core settings
+## Settings for integrators
 
-### One project
+If you do not work with code, you can send this section to your website developer together with the embed code.
 
-```javascript
+<CodeGroup>
+
+```javascript One project
 window.GridixWidget.init({
   lang: "en",
   projectId: "your-project-id"
 });
 ```
 
-### All developer projects
-
-```javascript
+```javascript All projects
 window.GridixWidget.init({
   lang: "en",
   userId: "your-user-id"
 });
 ```
 
-### Additional options
-
-```javascript
+```javascript Advanced setup
 window.GridixWidget.init({
   lang: "en",
   projectId: "project-id",
@@ -169,6 +218,16 @@ window.GridixWidget.init({
 });
 ```
 
+</CodeGroup>
+
+<Accordion title="What the parameters mean">
+  - `lang`: the widget interface language. Use `en` for English pages.
+  - `projectId`: displays one specific project.
+  - `userId`: displays all projects for a developer or agency.
+  - `theme`: the widget visual theme, if supported by your configuration.
+  - `showControls` and `enableSearch`: additional controls inside the widget.
+</Accordion>
+
 ### Container size
 
 Give the container a stable width and minimum height so the page does not jump while the widget loads:
@@ -177,7 +236,18 @@ Give the container a stable width and minimum height so the page does not jump w
 <div id="gridix-widget-root" style="width: 100%; min-height: 640px;"></div>
 ```
 
-## Test before publishing
+## What to send to your website developer
+
+If a developer or contractor will embed the widget, send them:
+
+- the ready embed code from Gridix;
+- the page URL where the widget should be added;
+- the display mode: one project through `projectId` or all projects through `userId`;
+- the interface language: `lang: "en"`;
+- the minimum container height: `min-height: 640px`;
+- the requirement to submit a test lead after publishing.
+
+## Minimum checklist before publishing
 
 <Steps>
   <Step title="Open preview">
@@ -193,6 +263,10 @@ Give the container a stable width and minimum height so the page does not jump w
     Make sure the lead appears in Gridix and contains the correct source.
   </Step>
 </Steps>
+
+<Check>
+  After publishing, open the page in a regular browser without CMS admin access. This checks the real visitor experience.
+</Check>
 
 ## Troubleshooting
 
