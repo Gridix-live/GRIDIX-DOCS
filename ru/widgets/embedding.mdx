@@ -18,6 +18,22 @@ sidebarTitle: "Встраивание виджета"
 
 <iframe src="https://www.youtube.com/embed/nIbp3pd9Mio" title="Пример работы с проектом Gridix" frameborder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
 
+## Самый простой путь
+
+Если вы настраиваете виджет без разработчика, двигайтесь по этому короткому сценарию.
+
+<Steps>
+  <Step title="Сгенерируйте код в Gridix">
+    Откройте раздел виджетов, выберите проект и язык интерфейса.
+  </Step>
+  <Step title="Вставьте код на сайт">
+    Используйте HTML-блок в CMS или передайте код человеку, который отвечает за сайт.
+  </Step>
+  <Step title="Проверьте заявку">
+    Откройте опубликованную страницу как обычный посетитель и отправьте тестовую заявку.
+  </Step>
+</Steps>
+
 ## Что делает виджет
 
 Виджет переносит ключевые возможности Gridix на внешний сайт:
@@ -126,7 +142,26 @@ sidebarTitle: "Встраивание виджета"
 ## Встраивание на сайт
 
 <Tabs>
-  <Tab title="HTML">
+  <Tab title="Самостоятельно" icon="user">
+    <Badge color="green" size="sm">Просто</Badge>
+
+    Подходит, если в вашей CMS есть блок для вставки HTML-кода.
+
+    <Steps>
+      <Step title="Откройте страницу в CMS">
+        Перейдите к странице, где должен появиться виджет: страница проекта, лендинг или раздел с планировками.
+      </Step>
+      <Step title="Добавьте HTML-блок">
+        Найдите блок с названием "HTML", "Custom HTML", "Embed", "Code" или похожим.
+      </Step>
+      <Step title="Вставьте embed-код">
+        Вставьте код из кабинета Gridix, сохраните страницу и откройте предпросмотр.
+      </Step>
+    </Steps>
+  </Tab>
+  <Tab title="HTML" icon="code">
+    <Badge color="blue" size="sm">Для разработчика</Badge>
+
     <Steps>
       <Step title="Откройте HTML-файл">
         Найдите страницу или шаблон, где должен отображаться виджет.
@@ -139,7 +174,9 @@ sidebarTitle: "Встраивание виджета"
       </Step>
     </Steps>
   </Tab>
-  <Tab title="WordPress">
+  <Tab title="WordPress" icon="wordpress">
+    <Badge color="green" size="sm">CMS</Badge>
+
     <Steps>
       <Step title="Откройте страницу">
         Перейдите к редактированию страницы или записи.
@@ -152,7 +189,9 @@ sidebarTitle: "Встраивание виджета"
       </Step>
     </Steps>
   </Tab>
-  <Tab title="CMS / no-code">
+  <Tab title="CMS / no-code" icon="layout-template">
+    <Badge color="green" size="sm">CMS</Badge>
+
     Для Drupal, Joomla, Webflow, Tilda и других CMS логика такая же: найдите блок для вставки HTML-кода, добавьте embed-код Gridix и сохраните страницу.
 
     Если платформа удаляет `<script>`, передайте код разработчику сайта или используйте раздел для пользовательского HTML/скриптов в настройках шаблона.
@@ -160,32 +199,34 @@ sidebarTitle: "Встраивание виджета"
 </Tabs>
 
 <Warning>
+  Некоторые CMS удаляют `<script>` из обычных текстовых блоков. Если виджет не появился после публикации, вставьте код через HTML/Embed-блок или передайте его разработчику сайта.
+</Warning>
+
+<Warning>
   Не вставляйте один и тот же контейнер `gridix-widget-root` несколько раз на одной странице. Если нужно показать несколько виджетов, используйте разные `containerId`.
 </Warning>
 
-## Основные настройки
+## Настройки для интегратора
 
-### Один проект
+Если вы не работаете с кодом, этот раздел можно отправить разработчику вместе с embed-кодом.
 
-```javascript
+<CodeGroup>
+
+```javascript Один проект
 window.GridixWidget.init({
   lang: "ru",
   projectId: "your-project-id"
 });
 ```
 
-### Все проекты девелопера
-
-```javascript
+```javascript Все проекты
 window.GridixWidget.init({
   lang: "ru",
   userId: "your-user-id"
 });
 ```
 
-### Дополнительные параметры
-
-```javascript
+```javascript Расширенная настройка
 window.GridixWidget.init({
   lang: "ru",
   projectId: "project-id",
@@ -194,6 +235,16 @@ window.GridixWidget.init({
   enableSearch: true
 });
 ```
+
+</CodeGroup>
+
+<Accordion title="Что означают параметры">
+  - `lang`: язык интерфейса виджета. Для русской версии сайта используйте `ru`.
+  - `projectId`: показывает один конкретный проект.
+  - `userId`: показывает все проекты девелопера или агентства.
+  - `theme`: визуальная тема виджета, если она поддерживается в вашей конфигурации.
+  - `showControls` и `enableSearch`: дополнительные элементы управления внутри виджета.
+</Accordion>
 
 ### Размер контейнера
 
