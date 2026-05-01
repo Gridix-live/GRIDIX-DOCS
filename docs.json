@@ -38,7 +38,6 @@
     "languages": [
       {
         "language": "en",
-        "name": "English",
         "default": true,
         "tabs": [
           {
@@ -161,6 +160,14 @@
                 ]
               }
             ]
+          }
+        ]
+      },
+      {
+        "language": "ru",
+        "tabs": [
+          {
+            "tab": "Начало работы"
           }
         ]
       }
