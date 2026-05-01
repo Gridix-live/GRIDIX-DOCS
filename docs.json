@@ -169,7 +169,14 @@
           {
             "tab": "Начало работы",
             "pages": [
-              "test-stranitsy"
+              "test-stranitsy",
+              {
+                "group": "Виджеты",
+                "icon": "code",
+                "pages": [
+                  "ru/widgets/embedding"
+                ]
+              }
             ]
           }
         ]
