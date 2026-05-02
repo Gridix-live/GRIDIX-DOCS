@@ -2,6 +2,7 @@
 title: "Встраивание виджета"
 description: "Как сгенерировать и встроить смарт-каталог GRIDIX на сайт"
 sidebarTitle: "Встраивание виджета"
+keywords: ["GRIDIX виджет", "встроить каталог недвижимости", "embed код", "смарт-каталог", "виджет сайта девелопера"]
 ---
 
 <Frame>
@@ -112,10 +113,10 @@ sidebarTitle: "Встраивание виджета"
 
 ```html
 <div id="gridix-widget-root"></div>
-<script src="https://your-domain.com/widget.js"></script>
+<script src="https://your-gridix-domain.com/widget/index.js"></script>
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    window.GRIDIXWidget && window.GRIDIXWidget.init({
+    window.GridixWidget && window.GridixWidget.init({
       lang: "ru",
       projectId: "your-project-id"
     });
@@ -136,7 +137,7 @@ sidebarTitle: "Встраивание виджета"
 - Эти значения берутся из кабинета GRIDIX или из готового embed-кода, который сгенерирован в разделе виджетов.
 
 <Tip>
-  В реальном коде замените `your-domain.com`, `your-project-id` или `your-user-id` на значения из кабинета GRIDIX.
+  В реальном коде замените `your-gridix-domain.com`, `your-project-id` или `your-user-id` на значения из кабинета GRIDIX.
 </Tip>
 
 ## Встраивание на сайт
@@ -213,26 +214,28 @@ sidebarTitle: "Встраивание виджета"
 <CodeGroup>
 
 ```javascript Один проект
-window.GRIDIXWidget.init({
+window.GridixWidget.init({
   lang: "ru",
   projectId: "your-project-id"
 });
 ```
 
 ```javascript Все проекты
-window.GRIDIXWidget.init({
+window.GridixWidget.init({
   lang: "ru",
   userId: "your-user-id"
 });
 ```
 
 ```javascript Расширенная настройка
-window.GRIDIXWidget.init({
+window.GridixWidget.init({
   lang: "ru",
   projectId: "project-id",
-  theme: "light",
-  showControls: true,
-  enableSearch: true
+  showFullProject: true,
+  showFloatingButton: true,
+  floatingButtonSide: "right",
+  floatingButtonBottomOffset: 40,
+  floatingButtonSideOffset: 32
 });
 ```
 
@@ -242,8 +245,9 @@ window.GRIDIXWidget.init({
   - `lang`: язык интерфейса виджета. Для русской версии сайта используйте `ru`.
   - `projectId`: показывает один конкретный проект.
   - `userId`: показывает все проекты девелопера или агентства.
-  - `theme`: визуальная тема виджета, если она поддерживается в вашей конфигурации.
-  - `showControls` и `enableSearch`: дополнительные элементы управления внутри виджета.
+  - `showFullProject`: показывает полный проект, если этот режим включён в генераторе.
+  - `showFloatingButton`: включает плавающую кнопку виджета.
+  - `floatingButtonSide`, `floatingButtonBottomOffset`, `floatingButtonSideOffset`: управляют позицией плавающей кнопки.
 </Accordion>
 
 ### Размер контейнера

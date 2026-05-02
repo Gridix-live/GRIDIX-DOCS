@@ -25,7 +25,18 @@
   },
   "seo": {
     "metatags": {
-      "canonical": "https://docs.gridix.live"
+      "canonical": "https://docs.gridix.live",
+      "description": "База знаний GRIDIX: запуск проектов недвижимости, лоты, генплан, виджет сайта, CRM, брокерская сеть и партнёрская программа.",
+      "keywords": "GRIDIX, база знаний GRIDIX, недвижимость, девелопер, интерактивные планировки, генплан, виджет недвижимости, CRM для девелопера, брокерская сеть",
+      "author": "GRIDIX",
+      "robots": "index, follow",
+      "googlebot": "index, follow",
+      "language": "ru",
+      "og:title": "База знаний GRIDIX",
+      "og:description": "Практическая документация GRIDIX для девелоперов, брокеров, партнёров и интеграторов.",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "База знаний GRIDIX",
+      "twitter:description": "Как запустить проект, лоты, генплан, виджет, CRM и брокерскую сеть в GRIDIX."
     }
   },
   "anchors": [
