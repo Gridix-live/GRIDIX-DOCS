@@ -1,5 +1,6 @@
 {
-  "name": "Gridix",
+  "$schema": "https://mintlify.com/docs.json",
+  "name": "GRIDIX",
   "theme": "mint",
   "logo": {
     "light": "/images/logo/gridix_black_logo.svg",
@@ -173,36 +174,65 @@
               {
                 "group": "Навигация",
                 "pages": [
-                  "ru/intro"
+                  "ru/intro",
+                  "ru/welcome/what-is-gridix",
+                  "ru/welcome/for-whom",
+                  "ru/welcome/roles-and-scenarios",
+                  "ru/welcome/terms",
+                  "ru/welcome/capabilities",
+                  "ru/welcome/quick-routes",
+                  "ru/welcome/content-gaps",
+                  "ru/welcome/support"
                 ]
               }
             ]
           },
           {
-            "tab": "Для застройщиков",
+            "tab": "Для девелоперов",
             "icon": "building",
             "groups": [
               {
                 "group": "Начало работы",
                 "pages": [
                   "ru/getting-started/registration",
+                  "ru/developer-start/launch-preparation",
                   "ru/getting-started/first-project",
+                  "ru/developer-start/quick-launch",
                   "ru/getting-started/dashboard-overview"
                 ]
               },
               {
-                "group": "Проекты и квартиры",
+                "group": "Проекты и структура",
                 "pages": [
                   "ru/projects/creation",
+                  "ru/projects/project-types",
                   "ru/projects/editing",
-                  "ru/projects/apartments",
-                  "ru/projects/custom-fields",
-                  "ru/projects/visualization",
-                  "ru/projects/pricing"
+                  "ru/projects/genplan"
                 ]
               },
               {
-                "group": "Лиды и CRM",
+                "group": "Лоты и данные",
+                "pages": [
+                  "ru/projects/apartments",
+                  "ru/projects/lot-statuses",
+                  "ru/projects/custom-fields",
+                  "ru/projects/pricing",
+                  "ru/projects/media-and-layouts"
+                ]
+              },
+              {
+                "group": "Смарт-каталог и сайт",
+                "pages": [
+                  "ru/widgets/public-catalog",
+                  "ru/projects/visualization",
+                  "ru/widgets/embedding",
+                  "ru/widgets/common-errors",
+                  "ru/domains/setup",
+                  "ru/admin-panel/branding"
+                ]
+              },
+              {
+                "group": "Лиды, контакты и CRM",
                 "pages": [
                   "ru/leads/overview",
                   "ru/leads/management",
@@ -213,15 +243,7 @@
                 ]
               },
               {
-                "group": "Сайт и публикация",
-                "pages": [
-                  "ru/widgets/embedding",
-                  "ru/domains/setup",
-                  "ru/admin-panel/branding"
-                ]
-              },
-              {
-                "group": "Агентская сеть",
+                "group": "Брокерская сеть",
                 "pages": [
                   "ru/broker-network/overview",
                   "ru/broker-network/agencies",
@@ -230,12 +252,17 @@
                 ]
               },
               {
-                "group": "Администрирование",
+                "group": "Команда и доступы",
                 "pages": [
                   "ru/admin-panel/overview",
                   "ru/admin-panel/settings",
                   "ru/admin-panel/managers",
-                  "ru/notifications/overview",
+                  "ru/notifications/overview"
+                ]
+              },
+              {
+                "group": "Аналитика и оплата",
+                "pages": [
                   "ru/analytics/overview",
                   "ru/subscriptions/plans",
                   "ru/subscriptions/managing"
@@ -244,7 +271,7 @@
             ]
           },
           {
-            "tab": "Для брокеров",
+            "tab": "Для брокеров и агентств",
             "icon": "user-tie",
             "groups": [
               {
@@ -252,20 +279,37 @@
                 "pages": [
                   "ru/broker-cabinet/overview",
                   "ru/broker-cabinet/getting-started/accept-invitation",
-                  "ru/broker-cabinet/getting-started/profile"
+                  "ru/broker-cabinet/getting-started/profile",
+                  "ru/broker-cabinet/access/troubleshooting"
                 ]
               },
               {
-                "group": "Работа с проектами и заявками",
+                "group": "Проекты девелопера",
                 "pages": [
-                  "ru/broker-cabinet/leads",
+                  "ru/broker-cabinet/projects/available-projects",
+                  "ru/broker-cabinet/projects/lots",
+                  "ru/broker-cabinet/projects/materials"
+                ]
+              },
+              {
+                "group": "Работа с клиентом",
+                "pages": [
+                  "ru/broker-cabinet/client-work/share-link",
+                  "ru/broker-cabinet/client-work/send-lead",
+                  "ru/broker-cabinet/client-work/duplicate-client",
+                  "ru/broker-cabinet/leads"
+                ]
+              },
+              {
+                "group": "Комиссии",
+                "pages": [
                   "ru/broker-cabinet/commissions"
                 ]
               }
             ]
           },
           {
-            "tab": "Партнеры Gridix",
+            "tab": "Партнёрская программа GRIDIX",
             "icon": "handshake",
             "groups": [
               {
@@ -276,10 +320,35 @@
                 ]
               },
               {
-                "group": "Сценарии партнерства",
+                "group": "Реферальная модель",
                 "pages": [
                   "ru/partners/getting-started/referral-links",
-                  "ru/partners/getting-started/direct-management"
+                  "ru/partners/referral/quality-lead",
+                  "ru/partners/referral/warm-intro",
+                  "ru/partners/referral/what-not-to-promise"
+                ]
+              },
+              {
+                "group": "Интеграторская модель",
+                "pages": [
+                  "ru/partners/getting-started/direct-management",
+                  "ru/partners/integrator/overview",
+                  "ru/partners/integrator/responsibility",
+                  "ru/partners/integrator/implementation"
+                ]
+              },
+              {
+                "group": "Статистика и вознаграждение",
+                "pages": [
+                  "ru/partners/rewards/statistics",
+                  "ru/partners/rewards/payouts"
+                ]
+              },
+              {
+                "group": "Материалы для партнёров",
+                "pages": [
+                  "ru/partners/materials/explain-gridix",
+                  "ru/partners/materials/first-message"
                 ]
               }
             ]
