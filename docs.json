@@ -167,25 +167,27 @@
         "language": "ru",
         "tabs": [
           {
+            "tab": "Добро пожаловать",
+            "icon": "rocket",
+            "groups": [
+              {
+                "group": "Навигация",
+                "pages": [
+                  "ru/intro"
+                ]
+              }
+            ]
+          },
+          {
             "tab": "Для застройщиков",
             "icon": "building",
             "groups": [
               {
                 "group": "Начало работы",
                 "pages": [
-                  "ru/intro",
                   "ru/getting-started/registration",
                   "ru/getting-started/first-project",
                   "ru/getting-started/dashboard-overview"
-                ]
-              },
-              {
-                "group": "Админ-панель",
-                "pages": [
-                  "ru/admin-panel/overview",
-                  "ru/admin-panel/settings",
-                  "ru/admin-panel/managers",
-                  "ru/admin-panel/branding"
                 ]
               },
               {
@@ -200,21 +202,22 @@
                 ]
               },
               {
-                "group": "Лиды и контакты",
+                "group": "Лиды и CRM",
                 "pages": [
                   "ru/leads/overview",
                   "ru/leads/management",
                   "ru/contacts/overview",
-                  "ru/contacts/management"
+                  "ru/contacts/management",
+                  "ru/crm-integrations/amocrm",
+                  "ru/crm-integrations/bitrix24"
                 ]
               },
               {
-                "group": "Сайт и интеграции",
+                "group": "Сайт и публикация",
                 "pages": [
                   "ru/widgets/embedding",
                   "ru/domains/setup",
-                  "ru/crm-integrations/amocrm",
-                  "ru/crm-integrations/bitrix24"
+                  "ru/admin-panel/branding"
                 ]
               },
               {
@@ -227,10 +230,13 @@
                 ]
               },
               {
-                "group": "Операции",
+                "group": "Администрирование",
                 "pages": [
-                  "ru/analytics/overview",
+                  "ru/admin-panel/overview",
+                  "ru/admin-panel/settings",
+                  "ru/admin-panel/managers",
                   "ru/notifications/overview",
+                  "ru/analytics/overview",
                   "ru/subscriptions/plans",
                   "ru/subscriptions/managing"
                 ]
@@ -242,9 +248,18 @@
             "icon": "user-tie",
             "groups": [
               {
-                "group": "Кабинет брокера",
+                "group": "Начало работы",
                 "pages": [
-                  "ru/broker-cabinet/overview"
+                  "ru/broker-cabinet/overview",
+                  "ru/broker-cabinet/getting-started/accept-invitation",
+                  "ru/broker-cabinet/getting-started/profile"
+                ]
+              },
+              {
+                "group": "Работа с проектами и заявками",
+                "pages": [
+                  "ru/broker-cabinet/leads",
+                  "ru/broker-cabinet/commissions"
                 ]
               }
             ]
@@ -254,10 +269,17 @@
             "icon": "handshake",
             "groups": [
               {
-                "group": "Партнерская программа",
+                "group": "Начало работы",
                 "pages": [
                   "ru/partners/overview",
                   "ru/partners/types"
+                ]
+              },
+              {
+                "group": "Сценарии партнерства",
+                "pages": [
+                  "ru/partners/getting-started/referral-links",
+                  "ru/partners/getting-started/direct-management"
                 ]
               }
             ]
