@@ -14,35 +14,39 @@
   },
   "topbarLinks": [
     {
-      "name": "Support",
+      "name": "Поддержка",
       "url": "https://t.me/gridix_bot"
+    },
+    {
+      "name": "Сайт GRIDIX",
+      "url": "https://gridix.live"
     }
   ],
   "topbarCtaButton": {
     "type": "link",
-    "name": "Get Started",
-    "url": "https://gridix.app"
+    "name": "Войти в кабинет",
+    "url": "https://app.gridix.live"
   },
   "seo": {
     "metatags": {
       "canonical": "https://docs.gridix.live",
-      "description": "База знаний GRIDIX: запуск проектов недвижимости, лоты, генплан, виджет сайта, CRM, брокерская сеть и партнёрская программа.",
-      "keywords": "GRIDIX, база знаний GRIDIX, недвижимость, девелопер, интерактивные планировки, генплан, виджет недвижимости, CRM для девелопера, брокерская сеть",
+      "description": "Центр помощи GRIDIX: запуск проектов недвижимости, лоты, генплан, смарт-каталог, виджет сайта, CRM, агентская сеть девелопера и партнёрская программа GRIDIX.",
+      "keywords": "GRIDIX, центр помощи GRIDIX, документация GRIDIX, недвижимость, девелопер, интерактивные планировки, генплан, виджет недвижимости, CRM для девелопера, агентская сеть девелопера",
       "author": "GRIDIX",
       "robots": "index, follow",
       "googlebot": "index, follow",
       "language": "ru",
-      "og:title": "База знаний GRIDIX",
-      "og:description": "Практическая документация GRIDIX для девелоперов, брокеров, партнёров и интеграторов.",
+      "og:title": "Центр помощи GRIDIX",
+      "og:description": "Документация GRIDIX для девелоперов, менеджеров продаж, агентств, брокеров и партнёров платформы.",
       "twitter:card": "summary_large_image",
-      "twitter:title": "База знаний GRIDIX",
-      "twitter:description": "Как запустить проект, лоты, генплан, виджет, CRM и брокерскую сеть в GRIDIX."
+      "twitter:title": "Центр помощи GRIDIX",
+      "twitter:description": "Как запустить проект, лоты, генплан, смарт-каталог, виджет, CRM и агентскую сеть в GRIDIX."
     }
   },
   "anchors": [
     {
-      "name": "Telegram",
-      "icon": "slack",
+      "name": "Telegram-поддержка",
+      "icon": "telegram",
       "url": "https://t.me/gridix_bot"
     }
   ],
@@ -183,106 +187,115 @@
             "icon": "rocket",
             "groups": [
               {
-                "group": "Навигация",
+                "group": "Знакомство",
                 "pages": [
                   "ru/intro",
                   "ru/welcome/what-is-gridix",
                   "ru/welcome/for-whom",
-                  "ru/welcome/roles-and-scenarios",
                   "ru/welcome/terms",
-                  "ru/welcome/capabilities",
+                  "ru/welcome/capabilities"
+                ]
+              },
+              {
+                "group": "Быстрый старт",
+                "pages": [
                   "ru/welcome/quick-routes",
-                  "ru/welcome/content-gaps",
                   "ru/welcome/support"
                 ]
               }
             ]
           },
           {
-            "tab": "Для девелоперов",
+            "tab": "Для девелопера",
             "icon": "building",
             "groups": [
               {
-                "group": "Начало работы",
+                "group": "Кабинет и команда",
                 "pages": [
                   "ru/getting-started/registration",
-                  "ru/developer-start/launch-preparation",
-                  "ru/getting-started/first-project",
-                  "ru/developer-start/quick-launch",
-                  "ru/getting-started/dashboard-overview"
+                  "ru/getting-started/dashboard-overview",
+                  "ru/admin-panel/overview",
+                  "ru/admin-panel/settings",
+                  "ru/admin-panel/managers",
+                  "ru/admin-panel/branding",
+                  "ru/notifications/overview"
                 ]
               },
               {
-                "group": "Проекты и структура",
+                "group": "Проекты",
                 "pages": [
+                  "ru/developer-start/launch-preparation",
+                  "ru/developer-start/quick-launch",
+                  "ru/getting-started/first-project",
                   "ru/projects/creation",
                   "ru/projects/project-types",
                   "ru/projects/editing",
-                  "ru/projects/genplan"
-                ]
-              },
-              {
-                "group": "Лоты и данные",
-                "pages": [
-                  "ru/projects/apartments",
-                  "ru/projects/lot-statuses",
-                  "ru/projects/custom-fields",
-                  "ru/projects/pricing",
+                  "ru/projects/genplan",
                   "ru/projects/media-and-layouts"
                 ]
               },
               {
-                "group": "Смарт-каталог и сайт",
+                "group": "Лоты и каталог",
                 "pages": [
-                  "ru/widgets/public-catalog",
+                  "ru/projects/apartments",
+                  "ru/projects/lot-statuses",
+                  "ru/projects/pricing",
+                  "ru/projects/custom-fields",
                   "ru/projects/visualization",
-                  "ru/widgets/embedding",
-                  "ru/widgets/common-errors",
-                  "ru/domains/setup",
-                  "ru/admin-panel/branding"
+                  "ru/widgets/smart-catalog"
                 ]
               },
               {
-                "group": "Лиды, контакты и CRM",
+                "group": "Сайт и виджет",
                 "pages": [
+                  "ru/widgets/public-catalog",
+                  "ru/widgets/embedding",
+                  "ru/widgets/common-errors",
+                  "ru/domains/setup"
+                ]
+              },
+              {
+                "group": "Заявки и контакты",
+                "pages": [
+                  "ru/leads/what-is-lead",
                   "ru/leads/overview",
+                  "ru/leads/source",
+                  "ru/leads/crm-flow",
                   "ru/leads/management",
                   "ru/contacts/overview",
-                  "ru/contacts/management",
+                  "ru/contacts/contact-vs-lead",
+                  "ru/contacts/management"
+                ]
+              },
+              {
+                "group": "CRM-интеграции",
+                "pages": [
                   "ru/crm-integrations/amocrm",
                   "ru/crm-integrations/bitrix24"
                 ]
               },
               {
-                "group": "Брокерская сеть",
+                "group": "Агентская сеть девелопера",
                 "pages": [
                   "ru/broker-network/overview",
+                  "ru/broker-network/invite-partner",
                   "ru/broker-network/agencies",
                   "ru/broker-network/leads",
                   "ru/broker-network/finance"
                 ]
               },
               {
-                "group": "Команда и доступы",
+                "group": "Подписка и аналитика",
                 "pages": [
-                  "ru/admin-panel/overview",
-                  "ru/admin-panel/settings",
-                  "ru/admin-panel/managers",
-                  "ru/notifications/overview"
-                ]
-              },
-              {
-                "group": "Аналитика и оплата",
-                "pages": [
-                  "ru/analytics/overview",
                   "ru/subscriptions/plans",
-                  "ru/subscriptions/managing"
+                  "ru/subscriptions/managing",
+                  "ru/analytics/overview"
                 ]
               }
             ]
           },
           {
-            "tab": "Для брокеров и агентств",
+            "tab": "Для агентств и брокеров",
             "icon": "user-tie",
             "groups": [
               {
@@ -291,7 +304,7 @@
                   "ru/broker-cabinet/overview",
                   "ru/broker-cabinet/getting-started/accept-invitation",
                   "ru/broker-cabinet/getting-started/profile",
-                  "ru/broker-cabinet/access/troubleshooting"
+                  "ru/broker-cabinet/what-partner-sees"
                 ]
               },
               {
@@ -308,13 +321,15 @@
                   "ru/broker-cabinet/client-work/share-link",
                   "ru/broker-cabinet/client-work/send-lead",
                   "ru/broker-cabinet/client-work/duplicate-client",
-                  "ru/broker-cabinet/leads"
+                  "ru/broker-cabinet/leads",
+                  "ru/broker-cabinet/commissions"
                 ]
               },
               {
-                "group": "Комиссии",
+                "group": "Помощь",
                 "pages": [
-                  "ru/broker-cabinet/commissions"
+                  "ru/broker-cabinet/access/troubleshooting",
+                  "ru/faq/access"
                 ]
               }
             ]
@@ -324,7 +339,7 @@
             "icon": "handshake",
             "groups": [
               {
-                "group": "Начало работы",
+                "group": "О программе",
                 "pages": [
                   "ru/partners/overview",
                   "ru/partners/types"
@@ -345,19 +360,15 @@
                   "ru/partners/getting-started/direct-management",
                   "ru/partners/integrator/overview",
                   "ru/partners/integrator/responsibility",
-                  "ru/partners/integrator/implementation"
+                  "ru/partners/integrator/implementation",
+                  "ru/integrators/launch-checklist"
                 ]
               },
               {
-                "group": "Статистика и вознаграждение",
+                "group": "Вознаграждение и материалы",
                 "pages": [
                   "ru/partners/rewards/statistics",
-                  "ru/partners/rewards/payouts"
-                ]
-              },
-              {
-                "group": "Материалы для партнёров",
-                "pages": [
+                  "ru/partners/rewards/payouts",
                   "ru/partners/materials/explain-gridix",
                   "ru/partners/materials/first-message"
                 ]
@@ -369,6 +380,7 @@
     ]
   },
   "footerSocials": {
-    "telegram": "https://t.me/gridix_bot"
+    "telegram": "https://t.me/gridix_bot",
+    "website": "https://gridix.live"
   }
 }

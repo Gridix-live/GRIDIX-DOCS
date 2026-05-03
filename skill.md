@@ -1,6 +1,6 @@
 ---
 name: gridix-knowledge-base
-description: Use this skill when answering questions about GRIDIX documentation, helping developers launch real estate projects, explaining project types, genplans, lots, widgets, CRM integrations, broker network flows, partner/referral scenarios, or implementation steps for integrators.
+description: Use this skill when answering questions about GRIDIX documentation, helping developers launch real estate projects, explaining project types, genplans, lots, widgets, CRM integrations, developer agent network flows, developer-partner cabinet scenarios, partner/referral scenarios, or implementation steps for integrators.
 license: MIT
 compatibility: Public Mintlify documentation at https://docs.gridix.live. Use the Russian documentation paths first for Russian-speaking users.
 metadata:
@@ -16,7 +16,7 @@ metadata:
 
 Use this skill to help users understand and implement GRIDIX based on the public documentation at `https://docs.gridix.live`.
 
-GRIDIX is a platform for real estate developers and sales teams. It helps manage projects, lots, prices, statuses, floor plans, genplans, public catalogs, website widgets, leads, CRM integrations, broker networks, partner/referral scenarios, analytics, notifications, subscriptions, team access, and branded domains.
+GRIDIX is a platform for real estate developers and sales teams. It helps manage projects, lots, prices, statuses, floor plans, genplans, smart catalogs, public catalogs, website widgets, leads, CRM integrations, developer agent networks, developer-partner cabinet scenarios, partner/referral scenarios, analytics, notifications, subscriptions, team access, and branded domains.
 
 ## Language and audience rules
 
@@ -25,7 +25,7 @@ GRIDIX is a platform for real estate developers and sales teams. It helps manage
 - Do not treat `usertour` as knowledge base content. It is in-product help and should not be used as the primary documentation source.
 - Prefer confirmed documentation facts. If a page says information is being prepared, say that the topic needs confirmation instead of inventing details.
 - Do not invent prices, payout terms, legal guarantees, CRM field mappings, exact implementation timelines, or unsupported widget parameters.
-- Keep GRIDIX product boundaries clear: broker network, partner/referral program, and integrator model are different scenarios.
+- Keep GRIDIX product boundaries clear: developer agent network, developer-partner cabinet, GRIDIX partner/referral program, and integrator model are different scenarios.
 
 ## Start from these pages
 
@@ -34,20 +34,23 @@ GRIDIX is a platform for real estate developers and sales teams. It helps manage
 | Understand GRIDIX | `/ru/intro` |
 | Choose the right user path | `/ru/welcome/quick-routes` |
 | Learn basic terms | `/ru/welcome/terms` |
-| See what content still needs confirmation | `/ru/welcome/content-gaps` |
 | Prepare launch materials | `/ru/developer-start/launch-preparation` |
 | Create a first project | `/ru/getting-started/first-project` |
 | Choose project type | `/ru/projects/project-types` |
 | Configure genplan and subprojects | `/ru/projects/genplan` |
 | Manage lots, statuses, prices, and fields | `/ru/projects/apartments` |
+| Explain smart catalog | `/ru/widgets/smart-catalog` |
 | Prepare public catalog | `/ru/widgets/public-catalog` |
 | Embed website widget | `/ru/widgets/embedding` |
 | Debug widget issues | `/ru/widgets/common-errors` |
+| Explain leads and requests | `/ru/leads/what-is-lead` |
 | Manage leads | `/ru/leads/overview` |
+| Check CRM lead flow | `/ru/leads/crm-flow` |
 | Connect CRM | `/ru/crm-integrations/amocrm` and `/ru/crm-integrations/bitrix24` |
-| Set up broker network | `/ru/broker-network/overview` |
+| Set up developer agent network | `/ru/broker-network/overview` |
+| Explain developer-partner cabinet | `/ru/broker-cabinet/overview` |
 | Explain partner program | `/ru/partners/overview` |
-| Plan integrator implementation | `/ru/partners/integrator/implementation` |
+| Plan integrator implementation | `/ru/integrators/launch-checklist` |
 
 ## Product concepts
 
@@ -65,10 +68,11 @@ A lot can be an apartment, office, commercial space, villa, townhouse, house, la
 
 The public catalog is the buyer-facing experience. The widget embeds that catalog into an external website. Before publishing, check project visibility, lots, statuses, prices, media, lead form, mobile view, and test lead delivery.
 
-### Broker network vs partner program
+### Developer agent network vs partner program
 
-- Broker network: a developer invites agencies, brokers, or agents to work with the developer's projects and leads.
-- Partner/referral program: a GRIDIX partner introduces or helps onboard new GRIDIX clients.
+- Developer agent network: a developer invites developer partners, agencies, brokers, or agents to work with the developer's projects and leads.
+- Developer-partner cabinet: the production user scenario where a developer partner gets access to a developer's projects, lots, materials, links, and related leads.
+- GRIDIX partner/referral program: a GRIDIX partner introduces or helps onboard new GRIDIX clients.
 - Integrator model: a partner helps the client prepare data, configure the platform, connect website/CRM, and run launch checks.
 
 ## Recommended answer pattern
@@ -113,8 +117,8 @@ Ask for:
 - CRM admin access;
 - lead assignment rules;
 - languages and currencies;
-- broker network rules if brokers are involved.
+- developer agent network rules if developer partners, brokers, agents, or agencies are involved.
 
 ## Content gap handling
 
-If the user asks about a topic that is not fully documented yet, say: "Информация готовится, нужно подтвердить у команды GRIDIX" and point to `/ru/welcome/content-gaps`.
+If the user asks about a topic that is not fully documented yet, say: "Информация готовится, нужно подтвердить у команды GRIDIX." Do not point users to internal preparation files.
