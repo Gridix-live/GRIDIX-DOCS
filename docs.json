@@ -53,8 +53,240 @@
   "navigation": {
     "languages": [
       {
-        "language": "en",
+        "language": "ru",
         "default": true,
+        "tabs": [
+          {
+            "tab": "Добро пожаловать",
+            "icon": "rocket",
+            "groups": [
+              {
+                "group": "Знакомство",
+                "pages": [
+                  "ru/intro",
+                  "ru/welcome/what-is-gridix",
+                  "ru/welcome/for-whom",
+                  "ru/welcome/roles-and-scenarios",
+                  "ru/welcome/terms",
+                  "ru/welcome/capabilities",
+                  "ru/welcome/whats-available"
+                ]
+              },
+              {
+                "group": "Быстрый старт",
+                "pages": [
+                  "ru/welcome/quick-routes",
+                  "ru/welcome/support"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Для девелопера",
+            "icon": "building",
+            "groups": [
+              {
+                "group": "Кабинет и команда",
+                "pages": [
+                  "ru/getting-started/registration",
+                  "ru/admin-panel/overview",
+                  "ru/admin-panel/settings",
+                  "ru/admin-panel/managers",
+                  "ru/admin-panel/branding",
+                  "ru/notifications/overview",
+                  "ru/notifications/push-setup",
+                  "ru/security/sso"
+                ]
+              },
+              {
+                "group": "Проекты",
+                "pages": [
+                  "ru/developer-start/launch-preparation",
+                  "ru/getting-started/first-project",
+                  "ru/projects/creation",
+                  "ru/projects/project-types",
+                  "ru/projects/editing",
+                  "ru/projects/genplan",
+                  "ru/projects/media-and-layouts"
+                ]
+              },
+              {
+                "group": "Лоты и каталог",
+                "pages": [
+                  "ru/projects/apartments",
+                  "ru/projects/lot-statuses",
+                  "ru/projects/pricing",
+                  "ru/projects/currency",
+                  "ru/projects/custom-fields",
+                  "ru/projects/visualization",
+                  "ru/widgets/smart-catalog"
+                ]
+              },
+              {
+                "group": "Сайт и виджет",
+                "pages": [
+                  "ru/widgets/public-catalog",
+                  "ru/widgets/embedding",
+                  "ru/widgets/common-errors",
+                  "ru/domains/setup"
+                ]
+              },
+              {
+                "group": "Заявки и контакты",
+                "pages": [
+                  "ru/leads/what-is-lead",
+                  "ru/leads/overview",
+                  "ru/leads/source",
+                  "ru/leads/crm-flow",
+                  "ru/leads/funnel-setup",
+                  "ru/leads/automation",
+                  "ru/leads/merge-duplicates",
+                  "ru/leads/management",
+                  "ru/contacts/overview",
+                  "ru/contacts/contact-vs-lead",
+                  "ru/contacts/management"
+                ]
+              },
+              {
+                "group": "CRM-интеграции",
+                "pages": [
+                  "ru/crm-integrations/amocrm",
+                  "ru/crm-integrations/bitrix24",
+                  "ru/crm-integrations/webhook",
+                  "ru/crm-integrations/email"
+                ]
+              },
+              {
+                "group": "Агентская сеть девелопера",
+                "pages": [
+                  "ru/broker-network/overview",
+                  "ru/broker-network/invite-partner",
+                  "ru/broker-network/agencies",
+                  "ru/broker-network/program-settings",
+                  "ru/broker-network/leadlock",
+                  "ru/broker-network/contract-templates",
+                  "ru/broker-network/leads",
+                  "ru/broker-network/finance"
+                ]
+              },
+              {
+                "group": "Подписка и аналитика",
+                "pages": [
+                  "ru/subscriptions/plans",
+                  "ru/subscriptions/managing",
+                  "ru/analytics/overview"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Для агентств и брокеров",
+            "icon": "user-tie",
+            "groups": [
+              {
+                "group": "Начало работы",
+                "pages": [
+                  "ru/broker-cabinet/overview",
+                  "ru/broker-cabinet/getting-started/accept-invitation",
+                  "ru/broker-cabinet/getting-started/profile",
+                  "ru/broker-cabinet/what-partner-sees"
+                ]
+              },
+              {
+                "group": "Проекты девелопера",
+                "pages": [
+                  "ru/broker-cabinet/projects/available-projects",
+                  "ru/broker-cabinet/projects/lots",
+                  "ru/broker-cabinet/projects/materials"
+                ]
+              },
+              {
+                "group": "Работа с клиентом",
+                "pages": [
+                  "ru/broker-cabinet/client-work/share-link",
+                  "ru/broker-cabinet/client-work/send-lead",
+                  "ru/broker-cabinet/client-work/duplicate-client",
+                  "ru/broker-cabinet/leads",
+                  "ru/broker-cabinet/commissions"
+                ]
+              },
+              {
+                "group": "Помощь",
+                "pages": [
+                  "ru/broker-cabinet/access/troubleshooting",
+                  "ru/faq/access"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Партнёрская программа GRIDIX",
+            "icon": "handshake",
+            "groups": [
+              {
+                "group": "О программе",
+                "pages": [
+                  "ru/partners/overview",
+                  "ru/partners/types"
+                ]
+              },
+              {
+                "group": "Реферальная модель",
+                "pages": [
+                  "ru/partners/getting-started/referral-links",
+                  "ru/partners/referral/quality-lead",
+                  "ru/partners/referral/warm-intro",
+                  "ru/partners/referral/what-not-to-promise"
+                ]
+              },
+              {
+                "group": "Интеграторская модель",
+                "pages": [
+                  "ru/partners/integrator/overview",
+                  "ru/partners/integrator/responsibility",
+                  "ru/partners/integrator/implementation",
+                  "ru/integrators/launch-checklist"
+                ]
+              },
+              {
+                "group": "Вознаграждение и материалы",
+                "pages": [
+                  "ru/partners/rewards/statistics",
+                  "ru/partners/rewards/payouts",
+                  "ru/partners/rewards/request-payout",
+                  "ru/partners/materials/explain-gridix",
+                  "ru/partners/materials/first-message"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Поддержка",
+            "icon": "life-ring",
+            "groups": [
+              {
+                "group": "Если что-то не получается",
+                "pages": [
+                  "ru/support/login-issues",
+                  "ru/support/email-not-received",
+                  "ru/support/project-not-visible",
+                  "ru/support/lead-not-in-crm",
+                  "ru/support/widget-not-working",
+                  "ru/support/payment-failed"
+                ]
+              },
+              {
+                "group": "Связаться с поддержкой",
+                "pages": [
+                  "ru/support/contact"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "language": "en",
         "tabs": [
           {
             "tab": "For Developers",
@@ -178,207 +410,20 @@
             ]
           }
         ]
-      },
-      {
-        "language": "ru",
-        "tabs": [
-          {
-            "tab": "Добро пожаловать",
-            "icon": "rocket",
-            "groups": [
-              {
-                "group": "Знакомство",
-                "pages": [
-                  "ru/intro",
-                  "ru/welcome/what-is-gridix",
-                  "ru/welcome/for-whom",
-                  "ru/welcome/terms",
-                  "ru/welcome/capabilities"
-                ]
-              },
-              {
-                "group": "Быстрый старт",
-                "pages": [
-                  "ru/welcome/quick-routes",
-                  "ru/welcome/support"
-                ]
-              }
-            ]
-          },
-          {
-            "tab": "Для девелопера",
-            "icon": "building",
-            "groups": [
-              {
-                "group": "Кабинет и команда",
-                "pages": [
-                  "ru/getting-started/registration",
-                  "ru/getting-started/dashboard-overview",
-                  "ru/admin-panel/overview",
-                  "ru/admin-panel/settings",
-                  "ru/admin-panel/managers",
-                  "ru/admin-panel/branding",
-                  "ru/notifications/overview"
-                ]
-              },
-              {
-                "group": "Проекты",
-                "pages": [
-                  "ru/developer-start/launch-preparation",
-                  "ru/developer-start/quick-launch",
-                  "ru/getting-started/first-project",
-                  "ru/projects/creation",
-                  "ru/projects/project-types",
-                  "ru/projects/editing",
-                  "ru/projects/genplan",
-                  "ru/projects/media-and-layouts"
-                ]
-              },
-              {
-                "group": "Лоты и каталог",
-                "pages": [
-                  "ru/projects/apartments",
-                  "ru/projects/lot-statuses",
-                  "ru/projects/pricing",
-                  "ru/projects/custom-fields",
-                  "ru/projects/visualization",
-                  "ru/widgets/smart-catalog"
-                ]
-              },
-              {
-                "group": "Сайт и виджет",
-                "pages": [
-                  "ru/widgets/public-catalog",
-                  "ru/widgets/embedding",
-                  "ru/widgets/common-errors",
-                  "ru/domains/setup"
-                ]
-              },
-              {
-                "group": "Заявки и контакты",
-                "pages": [
-                  "ru/leads/what-is-lead",
-                  "ru/leads/overview",
-                  "ru/leads/source",
-                  "ru/leads/crm-flow",
-                  "ru/leads/management",
-                  "ru/contacts/overview",
-                  "ru/contacts/contact-vs-lead",
-                  "ru/contacts/management"
-                ]
-              },
-              {
-                "group": "CRM-интеграции",
-                "pages": [
-                  "ru/crm-integrations/amocrm",
-                  "ru/crm-integrations/bitrix24"
-                ]
-              },
-              {
-                "group": "Агентская сеть девелопера",
-                "pages": [
-                  "ru/broker-network/overview",
-                  "ru/broker-network/invite-partner",
-                  "ru/broker-network/agencies",
-                  "ru/broker-network/leads",
-                  "ru/broker-network/finance"
-                ]
-              },
-              {
-                "group": "Подписка и аналитика",
-                "pages": [
-                  "ru/subscriptions/plans",
-                  "ru/subscriptions/managing",
-                  "ru/analytics/overview"
-                ]
-              }
-            ]
-          },
-          {
-            "tab": "Для агентств и брокеров",
-            "icon": "user-tie",
-            "groups": [
-              {
-                "group": "Начало работы",
-                "pages": [
-                  "ru/broker-cabinet/overview",
-                  "ru/broker-cabinet/getting-started/accept-invitation",
-                  "ru/broker-cabinet/getting-started/profile",
-                  "ru/broker-cabinet/what-partner-sees"
-                ]
-              },
-              {
-                "group": "Проекты девелопера",
-                "pages": [
-                  "ru/broker-cabinet/projects/available-projects",
-                  "ru/broker-cabinet/projects/lots",
-                  "ru/broker-cabinet/projects/materials"
-                ]
-              },
-              {
-                "group": "Работа с клиентом",
-                "pages": [
-                  "ru/broker-cabinet/client-work/share-link",
-                  "ru/broker-cabinet/client-work/send-lead",
-                  "ru/broker-cabinet/client-work/duplicate-client",
-                  "ru/broker-cabinet/leads",
-                  "ru/broker-cabinet/commissions"
-                ]
-              },
-              {
-                "group": "Помощь",
-                "pages": [
-                  "ru/broker-cabinet/access/troubleshooting",
-                  "ru/faq/access"
-                ]
-              }
-            ]
-          },
-          {
-            "tab": "Партнёрская программа GRIDIX",
-            "icon": "handshake",
-            "groups": [
-              {
-                "group": "О программе",
-                "pages": [
-                  "ru/partners/overview",
-                  "ru/partners/types"
-                ]
-              },
-              {
-                "group": "Реферальная модель",
-                "pages": [
-                  "ru/partners/getting-started/referral-links",
-                  "ru/partners/referral/quality-lead",
-                  "ru/partners/referral/warm-intro",
-                  "ru/partners/referral/what-not-to-promise"
-                ]
-              },
-              {
-                "group": "Интеграторская модель",
-                "pages": [
-                  "ru/partners/getting-started/direct-management",
-                  "ru/partners/integrator/overview",
-                  "ru/partners/integrator/responsibility",
-                  "ru/partners/integrator/implementation",
-                  "ru/integrators/launch-checklist"
-                ]
-              },
-              {
-                "group": "Вознаграждение и материалы",
-                "pages": [
-                  "ru/partners/rewards/statistics",
-                  "ru/partners/rewards/payouts",
-                  "ru/partners/materials/explain-gridix",
-                  "ru/partners/materials/first-message"
-                ]
-              }
-            ]
-          }
-        ]
       }
     ]
   },
+  "redirects": [
+    { "source": "/ru/agent-network/:slug*", "destination": "/ru/broker-network/:slug*" },
+    { "source": "/ru/partner/developer-partner", "destination": "/ru/broker-cabinet/overview" },
+    { "source": "/ru/partner/:slug*", "destination": "/ru/broker-network/:slug*" },
+    { "source": "/ru/referral/referral-links", "destination": "/ru/partners/getting-started/referral-links" },
+    { "source": "/ru/getting-started/dashboard-overview", "destination": "/ru/admin-panel/overview" },
+    { "source": "/ru/developer-start/quick-launch", "destination": "/ru/getting-started/first-project" },
+    { "source": "/ru/partners/getting-started/direct-management", "destination": "/ru/partners/integrator/overview" },
+    { "source": "/ru/faq/access", "destination": "/ru/support/login-issues" },
+    { "source": "/en/agent-network/:slug*", "destination": "/en/broker-network/:slug*" }
+  ],
   "footerSocials": {
     "telegram": "https://t.me/gridix_bot",
     "website": "https://gridix.live"
