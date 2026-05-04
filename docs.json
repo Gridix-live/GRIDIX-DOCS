@@ -122,20 +122,15 @@
                   "ru/projects/lot-statuses",
                   "ru/projects/pricing",
                   "ru/projects/currency",
-                  "ru/projects/custom-fields",
-                  "ru/projects/visualization"
+                  "ru/projects/custom-fields"
                 ]
               },
               {
-                "group": "Каталог проекта",
+                "group": "Смарт-каталог",
                 "pages": [
                   "ru/widgets/smart-catalog",
-                  "ru/widgets/public-catalog"
-                ]
-              },
-              {
-                "group": "Сайт и виджет",
-                "pages": [
+                  "ru/widgets/public-catalog",
+                  "ru/projects/visualization",
                   "ru/widgets/embedding",
                   "ru/widgets/common-errors",
                   "ru/domains/setup"
@@ -186,7 +181,7 @@
                 ]
               },
               {
-                "group": "Подписка",
+                "group": "Тарифы и подписка",
                 "pages": [
                   "ru/subscriptions/plans",
                   "ru/subscriptions/managing"
@@ -195,7 +190,7 @@
             ]
           },
           {
-            "tab": "Партнёры застройщика",
+            "tab": "Агентам и брокерам",
             "icon": "user-tie",
             "groups": [
               {
@@ -228,14 +223,13 @@
               {
                 "group": "Помощь",
                 "pages": [
-                  "ru/broker-cabinet/access/troubleshooting",
-                  "ru/faq/access"
+                  "ru/broker-cabinet/access/troubleshooting"
                 ]
               }
             ]
           },
           {
-            "tab": "Партнёры GRIDIX",
+            "tab": "Партнёрская программа GRIDIX",
             "icon": "handshake",
             "groups": [
               {
