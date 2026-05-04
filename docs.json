@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "name": "GRIDIX",
+  "name": "Gridix Help center",
   "theme": "mint",
   "logo": {
     "light": "/images/logo/gridix_black_logo.svg",
@@ -14,7 +14,7 @@
   },
   "topbarLinks": [
     {
-      "name": "Поддержка",
+      "name": "Support",
       "url": "https://t.me/gridix_bot"
     },
     {
@@ -24,8 +24,8 @@
   ],
   "topbarCtaButton": {
     "type": "link",
-    "name": "Войти в кабинет",
-    "url": "https://app.gridix.live"
+    "name": "Get Started",
+    "url": "https://gridix.app"
   },
   "seo": {
     "metatags": {
@@ -45,8 +45,8 @@
   },
   "anchors": [
     {
-      "name": "Telegram-поддержка",
-      "icon": "telegram",
+      "name": "Telegram",
+      "icon": "slack",
       "url": "https://t.me/gridix_bot"
     }
   ],
@@ -61,9 +61,14 @@
             "icon": "rocket",
             "groups": [
               {
+                "group": "Навигация",
+                "pages": [
+                  "ru/intro"
+                ]
+              },
+              {
                 "group": "Знакомство",
                 "pages": [
-                  "ru/intro",
                   "ru/welcome/what-is-gridix",
                   "ru/welcome/for-whom",
                   "ru/welcome/roles-and-scenarios",
@@ -82,9 +87,68 @@
             ]
           },
           {
-            "tab": "Для девелопера",
+            "tab": "Для застройщиков",
             "icon": "building",
             "groups": [
+              {
+                "group": "Начало работы",
+                "pages": [
+                  "ru/getting-started/registration",
+                  "ru/getting-started/first-project",
+                  "ru/getting-started/dashboard-overview"
+                ]
+              },
+              {
+                "group": "Проекты и квартиры",
+                "pages": [
+                  "ru/projects/creation",
+                  "ru/projects/editing",
+                  "ru/projects/apartments",
+                  "ru/projects/custom-fields",
+                  "ru/projects/visualization",
+                  "ru/projects/pricing"
+                ]
+              },
+              {
+                "group": "Лиды и CRM",
+                "pages": [
+                  "ru/leads/overview",
+                  "ru/leads/management",
+                  "ru/contacts/overview",
+                  "ru/contacts/management",
+                  "ru/crm-integrations/amocrm",
+                  "ru/crm-integrations/bitrix24"
+                ]
+              },
+              {
+                "group": "Сайт и публикация",
+                "pages": [
+                  "ru/widgets/embedding",
+                  "ru/domains/setup",
+                  "ru/admin-panel/branding"
+                ]
+              },
+              {
+                "group": "Агентская сеть",
+                "pages": [
+                  "ru/broker-network/overview",
+                  "ru/broker-network/agencies",
+                  "ru/broker-network/leads",
+                  "ru/broker-network/finance"
+                ]
+              },
+              {
+                "group": "Администрирование",
+                "pages": [
+                  "ru/admin-panel/overview",
+                  "ru/admin-panel/settings",
+                  "ru/admin-panel/managers",
+                  "ru/notifications/overview",
+                  "ru/analytics/overview",
+                  "ru/subscriptions/plans",
+                  "ru/subscriptions/managing"
+                ]
+              },
               {
                 "group": "Кабинет и команда",
                 "pages": [
@@ -180,9 +244,24 @@
             ]
           },
           {
-            "tab": "Для агентств и брокеров",
+            "tab": "Для брокеров",
             "icon": "user-tie",
             "groups": [
+              {
+                "group": "Начало работы",
+                "pages": [
+                  "ru/broker-cabinet/overview",
+                  "ru/broker-cabinet/getting-started/accept-invitation",
+                  "ru/broker-cabinet/getting-started/profile"
+                ]
+              },
+              {
+                "group": "Работа с проектами и заявками",
+                "pages": [
+                  "ru/broker-cabinet/leads",
+                  "ru/broker-cabinet/commissions"
+                ]
+              },
               {
                 "group": "Начало работы",
                 "pages": [
@@ -220,9 +299,23 @@
             ]
           },
           {
-            "tab": "Партнёрская программа GRIDIX",
+            "tab": "Партнеры Gridix",
             "icon": "handshake",
             "groups": [
+              {
+                "group": "Начало работы",
+                "pages": [
+                  "ru/partners/overview",
+                  "ru/partners/types"
+                ]
+              },
+              {
+                "group": "Сценарии партнерства",
+                "pages": [
+                  "ru/partners/getting-started/referral-links",
+                  "ru/partners/getting-started/direct-management"
+                ]
+              },
               {
                 "group": "О программе",
                 "pages": [
@@ -427,5 +520,8 @@
   "footerSocials": {
     "telegram": "https://t.me/gridix_bot",
     "website": "https://gridix.live"
+  },
+  "navbar": {
+    "links": []
   }
 }
