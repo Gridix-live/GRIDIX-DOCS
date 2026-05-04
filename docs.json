@@ -61,7 +61,7 @@
             "icon": "rocket",
             "groups": [
               {
-                "group": "Навигация",
+                "group": "Центр помощи",
                 "pages": [
                   "ru/intro"
                 ]
@@ -108,29 +108,34 @@
                 "pages": [
                   "ru/developer-start/launch-preparation",
                   "ru/getting-started/first-project",
-                  "ru/projects/creation",
                   "ru/projects/project-types",
+                  "ru/projects/creation",
                   "ru/projects/editing",
                   "ru/projects/genplan",
                   "ru/projects/media-and-layouts"
                 ]
               },
               {
-                "group": "Лоты и каталог",
+                "group": "Лоты",
                 "pages": [
                   "ru/projects/apartments",
                   "ru/projects/lot-statuses",
                   "ru/projects/pricing",
                   "ru/projects/currency",
                   "ru/projects/custom-fields",
-                  "ru/projects/visualization",
-                  "ru/widgets/smart-catalog"
+                  "ru/projects/visualization"
+                ]
+              },
+              {
+                "group": "Каталог проекта",
+                "pages": [
+                  "ru/widgets/smart-catalog",
+                  "ru/widgets/public-catalog"
                 ]
               },
               {
                 "group": "Сайт и виджет",
                 "pages": [
-                  "ru/widgets/public-catalog",
                   "ru/widgets/embedding",
                   "ru/widgets/common-errors",
                   "ru/domains/setup"
@@ -175,17 +180,22 @@
                 ]
               },
               {
-                "group": "Подписка и аналитика",
+                "group": "Аналитика",
+                "pages": [
+                  "ru/analytics/overview"
+                ]
+              },
+              {
+                "group": "Подписка",
                 "pages": [
                   "ru/subscriptions/plans",
-                  "ru/subscriptions/managing",
-                  "ru/analytics/overview"
+                  "ru/subscriptions/managing"
                 ]
               }
             ]
           },
           {
-            "tab": "Для брокеров",
+            "tab": "Партнёры застройщика",
             "icon": "user-tie",
             "groups": [
               {
@@ -225,7 +235,7 @@
             ]
           },
           {
-            "tab": "Партнеры Gridix",
+            "tab": "Партнёры GRIDIX",
             "icon": "handshake",
             "groups": [
               {
