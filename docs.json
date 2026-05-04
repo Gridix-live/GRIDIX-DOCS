@@ -46,7 +46,7 @@
   "anchors": [
     {
       "name": "Telegram",
-      "icon": "slack",
+      "icon": "telegram",
       "url": "https://t.me/gridix_bot"
     }
   ],
@@ -91,65 +91,6 @@
             "icon": "building",
             "groups": [
               {
-                "group": "Начало работы",
-                "pages": [
-                  "ru/getting-started/registration",
-                  "ru/getting-started/first-project",
-                  "ru/getting-started/dashboard-overview"
-                ]
-              },
-              {
-                "group": "Проекты и квартиры",
-                "pages": [
-                  "ru/projects/creation",
-                  "ru/projects/editing",
-                  "ru/projects/apartments",
-                  "ru/projects/custom-fields",
-                  "ru/projects/visualization",
-                  "ru/projects/pricing"
-                ]
-              },
-              {
-                "group": "Лиды и CRM",
-                "pages": [
-                  "ru/leads/overview",
-                  "ru/leads/management",
-                  "ru/contacts/overview",
-                  "ru/contacts/management",
-                  "ru/crm-integrations/amocrm",
-                  "ru/crm-integrations/bitrix24"
-                ]
-              },
-              {
-                "group": "Сайт и публикация",
-                "pages": [
-                  "ru/widgets/embedding",
-                  "ru/domains/setup",
-                  "ru/admin-panel/branding"
-                ]
-              },
-              {
-                "group": "Агентская сеть",
-                "pages": [
-                  "ru/broker-network/overview",
-                  "ru/broker-network/agencies",
-                  "ru/broker-network/leads",
-                  "ru/broker-network/finance"
-                ]
-              },
-              {
-                "group": "Администрирование",
-                "pages": [
-                  "ru/admin-panel/overview",
-                  "ru/admin-panel/settings",
-                  "ru/admin-panel/managers",
-                  "ru/notifications/overview",
-                  "ru/analytics/overview",
-                  "ru/subscriptions/plans",
-                  "ru/subscriptions/managing"
-                ]
-              },
-              {
                 "group": "Кабинет и команда",
                 "pages": [
                   "ru/getting-started/registration",
@@ -159,33 +100,40 @@
                   "ru/admin-panel/branding",
                   "ru/notifications/overview",
                   "ru/notifications/push-setup",
-                  "ru/security/sso",
-                  "ru/security/data-security"
+                  "ru/security/sso"
                 ]
               },
               {
-                "group": "Настройка проекта",
+                "group": "Проекты",
                 "pages": [
-                  "ru/getting-started/demo",
+                  "ru/developer-start/launch-preparation",
                   "ru/getting-started/first-project",
-                  "ru/getting-started/onboarding-checklist",
                   "ru/projects/creation",
                   "ru/projects/project-types",
                   "ru/projects/editing",
                   "ru/projects/genplan",
-                  "ru/projects/media-and-layouts",
-                  "ru/projects/visualization"
+                  "ru/projects/media-and-layouts"
                 ]
               },
               {
-                "group": "Лоты",
+                "group": "Лоты и каталог",
                 "pages": [
                   "ru/projects/apartments",
                   "ru/projects/lot-statuses",
                   "ru/projects/pricing",
                   "ru/projects/currency",
                   "ru/projects/custom-fields",
-                  "ru/projects/import-export"
+                  "ru/projects/visualization",
+                  "ru/widgets/smart-catalog"
+                ]
+              },
+              {
+                "group": "Сайт и виджет",
+                "pages": [
+                  "ru/widgets/public-catalog",
+                  "ru/widgets/embedding",
+                  "ru/widgets/common-errors",
+                  "ru/domains/setup"
                 ]
               },
               {
@@ -193,7 +141,6 @@
                 "pages": [
                   "ru/leads/what-is-lead",
                   "ru/leads/overview",
-                  "ru/leads/kanban",
                   "ru/leads/source",
                   "ru/leads/crm-flow",
                   "ru/leads/funnel-setup",
@@ -203,6 +150,15 @@
                   "ru/contacts/overview",
                   "ru/contacts/contact-vs-lead",
                   "ru/contacts/management"
+                ]
+              },
+              {
+                "group": "CRM-интеграции",
+                "pages": [
+                  "ru/crm-integrations/amocrm",
+                  "ru/crm-integrations/bitrix24",
+                  "ru/crm-integrations/webhook",
+                  "ru/crm-integrations/email"
                 ]
               },
               {
@@ -229,23 +185,7 @@
             ]
           },
           {
-            "tab": "Смарт-каталог",
-            "icon": "grid-2x2",
-            "groups": [
-              {
-                "group": "Каталог и виджет",
-                "pages": [
-                  "ru/widgets/smart-catalog",
-                  "ru/widgets/public-catalog",
-                  "ru/widgets/embedding",
-                  "ru/widgets/common-errors",
-                  "ru/domains/setup"
-                ]
-              }
-            ]
-          },
-          {
-            "tab": "Для агентств и брокеров",
+            "tab": "Для брокеров",
             "icon": "user-tie",
             "groups": [
               {
@@ -253,7 +193,6 @@
                 "pages": [
                   "ru/broker-cabinet/overview",
                   "ru/broker-cabinet/getting-started/accept-invitation",
-                  "ru/broker-cabinet/getting-started/registration",
                   "ru/broker-cabinet/getting-started/profile",
                   "ru/broker-cabinet/what-partner-sees"
                 ]
@@ -263,26 +202,17 @@
                 "pages": [
                   "ru/broker-cabinet/projects/available-projects",
                   "ru/broker-cabinet/projects/lots",
-                  "ru/broker-cabinet/projects/materials",
-                  "ru/broker-cabinet/projects/media-bank",
-                  "ru/broker-cabinet/projects/construction"
+                  "ru/broker-cabinet/projects/materials"
                 ]
               },
               {
                 "group": "Работа с клиентом",
                 "pages": [
                   "ru/broker-cabinet/client-work/share-link",
-                  "ru/broker-cabinet/client-work/favorites",
                   "ru/broker-cabinet/client-work/send-lead",
                   "ru/broker-cabinet/client-work/duplicate-client",
                   "ru/broker-cabinet/leads",
                   "ru/broker-cabinet/commissions"
-                ]
-              },
-              {
-                "group": "Аналитика",
-                "pages": [
-                  "ru/broker-cabinet/analytics"
                 ]
               },
               {
@@ -298,20 +228,6 @@
             "tab": "Партнеры Gridix",
             "icon": "handshake",
             "groups": [
-              {
-                "group": "Начало работы",
-                "pages": [
-                  "ru/partners/overview",
-                  "ru/partners/types"
-                ]
-              },
-              {
-                "group": "Сценарии партнерства",
-                "pages": [
-                  "ru/partners/getting-started/referral-links",
-                  "ru/partners/getting-started/direct-management"
-                ]
-              },
               {
                 "group": "О программе",
                 "pages": [
@@ -350,35 +266,6 @@
             ]
           },
           {
-            "tab": "Для интеграторов",
-            "icon": "wrench",
-            "groups": [
-              {
-                "group": "Запуск проекта",
-                "pages": [
-                  "ru/developer-start/launch-preparation",
-                  "ru/integrators/launch-checklist"
-                ]
-              },
-              {
-                "group": "CRM-интеграции",
-                "pages": [
-                  "ru/crm-integrations/amocrm",
-                  "ru/crm-integrations/bitrix24",
-                  "ru/crm-integrations/webhook",
-                  "ru/crm-integrations/email"
-                ]
-              },
-              {
-                "group": "Диагностика",
-                "pages": [
-                  "ru/support/widget-not-working",
-                  "ru/support/lead-not-in-crm"
-                ]
-              }
-            ]
-          },
-          {
             "tab": "Поддержка",
             "icon": "life-ring",
             "groups": [
@@ -388,8 +275,9 @@
                   "ru/support/login-issues",
                   "ru/support/email-not-received",
                   "ru/support/project-not-visible",
-                  "ru/support/payment-failed",
-                  "ru/support/bitrix24-russia"
+                  "ru/support/lead-not-in-crm",
+                  "ru/support/widget-not-working",
+                  "ru/support/payment-failed"
                 ]
               },
               {
@@ -531,15 +419,42 @@
     ]
   },
   "redirects": [
-    { "source": "/ru/agent-network/:slug*", "destination": "/ru/broker-network/:slug*" },
-    { "source": "/ru/partner/developer-partner", "destination": "/ru/broker-cabinet/overview" },
-    { "source": "/ru/partner/:slug*", "destination": "/ru/broker-network/:slug*" },
-    { "source": "/ru/referral/referral-links", "destination": "/ru/partners/getting-started/referral-links" },
-    { "source": "/ru/getting-started/dashboard-overview", "destination": "/ru/admin-panel/overview" },
-    { "source": "/ru/developer-start/quick-launch", "destination": "/ru/getting-started/first-project" },
-    { "source": "/ru/partners/getting-started/direct-management", "destination": "/ru/partners/integrator/overview" },
-    { "source": "/ru/faq/access", "destination": "/ru/support/login-issues" },
-    { "source": "/en/agent-network/:slug*", "destination": "/en/broker-network/:slug*" }
+    {
+      "source": "/ru/agent-network/:slug*",
+      "destination": "/ru/broker-network/:slug*"
+    },
+    {
+      "source": "/ru/partner/developer-partner",
+      "destination": "/ru/broker-cabinet/overview"
+    },
+    {
+      "source": "/ru/partner/:slug*",
+      "destination": "/ru/broker-network/:slug*"
+    },
+    {
+      "source": "/ru/referral/referral-links",
+      "destination": "/ru/partners/getting-started/referral-links"
+    },
+    {
+      "source": "/ru/getting-started/dashboard-overview",
+      "destination": "/ru/admin-panel/overview"
+    },
+    {
+      "source": "/ru/developer-start/quick-launch",
+      "destination": "/ru/getting-started/first-project"
+    },
+    {
+      "source": "/ru/partners/getting-started/direct-management",
+      "destination": "/ru/partners/integrator/overview"
+    },
+    {
+      "source": "/ru/faq/access",
+      "destination": "/ru/support/login-issues"
+    },
+    {
+      "source": "/en/agent-network/:slug*",
+      "destination": "/en/broker-network/:slug*"
+    }
   ],
   "footerSocials": {
     "telegram": "https://t.me/gridix_bot",
