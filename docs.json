@@ -159,40 +159,33 @@
                   "ru/admin-panel/branding",
                   "ru/notifications/overview",
                   "ru/notifications/push-setup",
-                  "ru/security/sso"
+                  "ru/security/sso",
+                  "ru/security/data-security"
                 ]
               },
               {
-                "group": "Проекты",
+                "group": "Настройка проекта",
                 "pages": [
-                  "ru/developer-start/launch-preparation",
+                  "ru/getting-started/demo",
                   "ru/getting-started/first-project",
+                  "ru/getting-started/onboarding-checklist",
                   "ru/projects/creation",
                   "ru/projects/project-types",
                   "ru/projects/editing",
                   "ru/projects/genplan",
-                  "ru/projects/media-and-layouts"
+                  "ru/projects/media-and-layouts",
+                  "ru/projects/visualization"
                 ]
               },
               {
-                "group": "Лоты и каталог",
+                "group": "Лоты",
                 "pages": [
                   "ru/projects/apartments",
                   "ru/projects/lot-statuses",
                   "ru/projects/pricing",
                   "ru/projects/currency",
                   "ru/projects/custom-fields",
-                  "ru/projects/visualization",
-                  "ru/widgets/smart-catalog"
-                ]
-              },
-              {
-                "group": "Сайт и виджет",
-                "pages": [
-                  "ru/widgets/public-catalog",
-                  "ru/widgets/embedding",
-                  "ru/widgets/common-errors",
-                  "ru/domains/setup"
+                  "ru/projects/import-export"
                 ]
               },
               {
@@ -200,6 +193,7 @@
                 "pages": [
                   "ru/leads/what-is-lead",
                   "ru/leads/overview",
+                  "ru/leads/kanban",
                   "ru/leads/source",
                   "ru/leads/crm-flow",
                   "ru/leads/funnel-setup",
@@ -209,15 +203,6 @@
                   "ru/contacts/overview",
                   "ru/contacts/contact-vs-lead",
                   "ru/contacts/management"
-                ]
-              },
-              {
-                "group": "CRM-интеграции",
-                "pages": [
-                  "ru/crm-integrations/amocrm",
-                  "ru/crm-integrations/bitrix24",
-                  "ru/crm-integrations/webhook",
-                  "ru/crm-integrations/email"
                 ]
               },
               {
@@ -244,7 +229,23 @@
             ]
           },
           {
-            "tab": "Для брокеров",
+            "tab": "Смарт-каталог",
+            "icon": "grid-2x2",
+            "groups": [
+              {
+                "group": "Каталог и виджет",
+                "pages": [
+                  "ru/widgets/smart-catalog",
+                  "ru/widgets/public-catalog",
+                  "ru/widgets/embedding",
+                  "ru/widgets/common-errors",
+                  "ru/domains/setup"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Для агентств и брокеров",
             "icon": "user-tie",
             "groups": [
               {
@@ -252,21 +253,7 @@
                 "pages": [
                   "ru/broker-cabinet/overview",
                   "ru/broker-cabinet/getting-started/accept-invitation",
-                  "ru/broker-cabinet/getting-started/profile"
-                ]
-              },
-              {
-                "group": "Работа с проектами и заявками",
-                "pages": [
-                  "ru/broker-cabinet/leads",
-                  "ru/broker-cabinet/commissions"
-                ]
-              },
-              {
-                "group": "Начало работы",
-                "pages": [
-                  "ru/broker-cabinet/overview",
-                  "ru/broker-cabinet/getting-started/accept-invitation",
+                  "ru/broker-cabinet/getting-started/registration",
                   "ru/broker-cabinet/getting-started/profile",
                   "ru/broker-cabinet/what-partner-sees"
                 ]
@@ -276,17 +263,26 @@
                 "pages": [
                   "ru/broker-cabinet/projects/available-projects",
                   "ru/broker-cabinet/projects/lots",
-                  "ru/broker-cabinet/projects/materials"
+                  "ru/broker-cabinet/projects/materials",
+                  "ru/broker-cabinet/projects/media-bank",
+                  "ru/broker-cabinet/projects/construction"
                 ]
               },
               {
                 "group": "Работа с клиентом",
                 "pages": [
                   "ru/broker-cabinet/client-work/share-link",
+                  "ru/broker-cabinet/client-work/favorites",
                   "ru/broker-cabinet/client-work/send-lead",
                   "ru/broker-cabinet/client-work/duplicate-client",
                   "ru/broker-cabinet/leads",
                   "ru/broker-cabinet/commissions"
+                ]
+              },
+              {
+                "group": "Аналитика",
+                "pages": [
+                  "ru/broker-cabinet/analytics"
                 ]
               },
               {
@@ -354,6 +350,35 @@
             ]
           },
           {
+            "tab": "Для интеграторов",
+            "icon": "wrench",
+            "groups": [
+              {
+                "group": "Запуск проекта",
+                "pages": [
+                  "ru/developer-start/launch-preparation",
+                  "ru/integrators/launch-checklist"
+                ]
+              },
+              {
+                "group": "CRM-интеграции",
+                "pages": [
+                  "ru/crm-integrations/amocrm",
+                  "ru/crm-integrations/bitrix24",
+                  "ru/crm-integrations/webhook",
+                  "ru/crm-integrations/email"
+                ]
+              },
+              {
+                "group": "Диагностика",
+                "pages": [
+                  "ru/support/widget-not-working",
+                  "ru/support/lead-not-in-crm"
+                ]
+              }
+            ]
+          },
+          {
             "tab": "Поддержка",
             "icon": "life-ring",
             "groups": [
@@ -363,9 +388,8 @@
                   "ru/support/login-issues",
                   "ru/support/email-not-received",
                   "ru/support/project-not-visible",
-                  "ru/support/lead-not-in-crm",
-                  "ru/support/widget-not-working",
-                  "ru/support/payment-failed"
+                  "ru/support/payment-failed",
+                  "ru/support/bitrix24-russia"
                 ]
               },
               {
